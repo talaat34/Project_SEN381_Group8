@@ -55,3 +55,25 @@ C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\SEN381_Project_Call
 C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csprojAssemblyReference.cache
 C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.TechnicianDashboard.resources
 C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.userControls.technicianRequest.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.exe.config
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.exe
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.pdb
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csprojAssemblyReference.cache
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.AdministratorDashboard.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.alert.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_CALLS.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_MSGs.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_PROFILE.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashoard.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.login.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.register.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.splash.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.Properties.Resources.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.TechnicianDashboard.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.userControls.technicianRequest.resources
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.GenerateResource.cache
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CoreCompileInputs.cache
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CopyComplete
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.exe
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.pdb
