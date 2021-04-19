@@ -77,3 +77,4 @@ C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_G
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CopyComplete
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.exe
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.pdb
+C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.clientDashboard.resources

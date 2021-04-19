@@ -180,9 +180,8 @@ namespace SEN381_Project_Call_Center_Group_8
 
                                     //Closing the login form and opeing the Business client dashboard
                                     this.Hide();
-                                    //The Business client form needs to be implemeted
-                                    MessageBox.Show("The Bysiness client form needs to be implemented");
-                                    Application.Exit();
+                                    clientDashboard cd = new clientDashboard();
+                                    cd.Show();
                                 }
                             }
                             else
@@ -208,11 +207,16 @@ namespace SEN381_Project_Call_Center_Group_8
                                     loginPersonDetails.username = indClient.Username;
                                     loginPersonDetails.password = indClient.Password;
 
+                                    //This is for the database table name label - Start
+                                    clientDashboard cd = new clientDashboard();
+                                    cd.lblTableName.Text = "clientIndividual";
+                                    //This is for the database table name label - END
+
                                     //Closing the login form and opeing the call center dashboard
                                     this.Hide();
-                                    //The individual client form needs to be implemeted
-                                    MessageBox.Show("The individual client form needs to be implemented");
-                                    Application.Exit();
+
+                                    //Below is the Client Dashboard which is already instantiated on line 210
+                                    cd.Show();
                                 }
                             }
                             else

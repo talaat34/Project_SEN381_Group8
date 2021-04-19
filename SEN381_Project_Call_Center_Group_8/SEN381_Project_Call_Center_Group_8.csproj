@@ -66,6 +66,12 @@
     <Compile Include="alert.Designer.cs">
       <DependentUpon>alert.cs</DependentUpon>
     </Compile>
+    <Compile Include="clientDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientDashboard.Designer.cs">
+      <DependentUpon>clientDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\userControls\callCenterDashboard_CALLS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="alert.resx">
       <DependentUpon>alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientDashboard.resx">
+      <DependentUpon>clientDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\userControls\callCenterDashboard_CALLS.resx">
       <DependentUpon>callCenterDashboard_CALLS.cs</DependentUpon>
