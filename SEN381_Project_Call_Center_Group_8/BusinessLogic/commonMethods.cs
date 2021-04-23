@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Threading;
 using System.Windows.Forms;
@@ -9,6 +10,58 @@ namespace SEN381_Project_Call_Center_Group_8
 {
     class commonMethods
     {
+        //Objects - START
+        Random rand = new Random();
+        //Objects - END
+
+        /*THIS METHOD IS TO GENERATE A RANDOM USER PHONE NUMBER - START*/
+        public string phoneNumber()
+        {
+            StringBuilder phoneNumber = new StringBuilder(10);
+            phoneNumber.Append("0");
+            int number;
+
+            //Creating the first two digits after the 'zero'
+            for (int i = 0; i < 2; i++)
+            {
+                number = rand.Next(1, 9);
+                phoneNumber = phoneNumber.Append(number.ToString());
+            }
+
+            //Creating the three middle numbers of the phone number
+            number = rand.Next(0, 948);
+            phoneNumber = phoneNumber.Append(number.ToString());
+
+            //Creating the four last numbers of the phone number
+            number = rand.Next(0, 10000);
+            phoneNumber = phoneNumber.Append(number.ToString());
+
+            //Return the phone numebr
+            return phoneNumber.ToString();
+        }
+        /*THIS METHOD IS TO GENERATE A RANDOM USER PHONE NUMBER - END*/
+
+        //This is to generate user unique ID - Zero padding
+        public string zeroAppend(string zeros_and_lastResord, int idLimit)
+        {
+            return zeros_and_lastResord.Substring(zeros_and_lastResord.Length - idLimit);
+        }
+        //This is also used to generate random letter for user ID
+        public char randomLetter()
+        {
+            List<char> letters = new List<char>();
+            letters.Add('A');
+            letters.Add('B');
+            letters.Add('C');
+            letters.Add('D');
+            letters.Add('E');
+
+            Random rand = new Random();
+            int index = rand.Next(letters.Count);
+
+            char randomLetter = letters[index];
+            return randomLetter; 
+        }
         //This is for getting the text height in a label
         public int getTextHeight(Label lbl)
         {

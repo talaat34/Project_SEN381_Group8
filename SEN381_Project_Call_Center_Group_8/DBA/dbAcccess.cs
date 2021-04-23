@@ -24,6 +24,20 @@ namespace SEN381_Project_Call_Center_Group_8
             connBuilder.IntegratedSecurity = true;
         }
 
+        /*This method is used to count the number of rows of a given table*/
+        public int countTableRows(string tableName)
+        {
+            string query = "SELECT COUNT(*) FROM " + tableName;
+            int count = 0;
+            conn = new SqlConnection(connBuilder.ToString());
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                conn.Open();
+                count = (int)cmd.ExecuteScalar();
+            }
+            return count;
+        }
+
         // Update query - THIS WILL BE DONE WHEN WE DESIGN COMPLETE FROM (FORM IMPLEMENTATION)
         public string updateRequest(string updateType, string tableName, string colOneName, string colOneValue, string colTwoName, int colTwoValue, string colThreeName, string colThreeValue)
         {
@@ -284,13 +298,62 @@ namespace SEN381_Project_Call_Center_Group_8
         }
 
         //REGISTRATION
+        public void insertUserPhoneNumber(string userID, string userType)
+        {
+            //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - START
+            string phoneNumber = common.phoneNumber();
+            query = "INSERT INTO phoneNumber(phoneNumber, clientNumber, clientType)";
+            query += "VALUES('" + phoneNumber + "', '" + userID + "', '" + userType + "')";
+            try
+            {
+                conn.Open();
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                //Closing the connection
+                conn.Close();
+            }
+            //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - END
+        }
         public string registration(string userType, string name, string surname_location, string role_email, string pass)
         {
             //This is a local variable for the success or error msg
             string success_error = "";
 
-            //Generating user ID
-            string userID = common.generateUserID(name, surname_location);
+            /*THIS PART INVOLVE THE GENEARTION OF USER ID - ZERO PADDING* - START*/
+            int users_table_count;
+            string userID;
+            string firstLetter;
+            int idLimit = 8;
+            string secondPartOfID;
+            if (userType == "individual")
+            {
+                users_table_count = countTableRows("clientIndividual");
+                firstLetter = common.randomLetter().ToString();
+                secondPartOfID = common.zeroAppend("00000000" + users_table_count, + idLimit);
+                //Full user ID
+                userID = firstLetter + secondPartOfID;
+            }
+            else if (userType == "business")
+            {
+                users_table_count = countTableRows("businessClient");
+                firstLetter = common.randomLetter().ToString();
+                secondPartOfID = common.zeroAppend("00000000" + users_table_count, +idLimit);
+                //Full user ID
+                userID = firstLetter + secondPartOfID;
+            }
+            else
+            {
+                userID = common.generateUserID(name, surname_location);
+            }
+            /*THIS PART INVOLVE THE GENEARTION OF USER ID - ZERO PADDING* - END*/
+
             //generating username 
             int surname_location_length = surname_location.Length - 1;
             string username = name.Substring(0,1).ToLower() + surname_location.Substring(0,1).ToUpper() + surname_location.Substring(1, surname_location_length) + common.generateRandomNumber(0,10).ToString();
@@ -304,6 +367,11 @@ namespace SEN381_Project_Call_Center_Group_8
 
             if (userType == "individual")
             {
+                //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - START
+                insertUserPhoneNumber(userID, userType);
+                //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - END
+
+                //THEN WE NEED TO STORE THE USER'S DETAILS IN INDIVIDUAL TABLE - START
                 query = "INSERT INTO clientIndividual(id, name, surname, role, verified,username, password)";
                 query += "VALUES(@id, @name, @surname, @role, @verified,@username, @pass)";
                 try
@@ -335,9 +403,18 @@ namespace SEN381_Project_Call_Center_Group_8
                 {
                     MessageBox.Show(e.ToString());
                 }
+                finally
+                {
+                    //Closing the connection
+                    conn.Close();
+                }
             }
             else if (userType == "business")
             {
+                //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - START
+                insertUserPhoneNumber(userID, userType);
+                //FIRST WE NEED TO STORE THE USER'S PHONE  NUMBER - END
+
                 //Business
                 query = "INSERT INTO businessClient(id, name, location, email, verified, username, password)";
                 query += "VALUES(@id, @name, @location, @email, @verified, @username, @pass)";
@@ -370,6 +447,11 @@ namespace SEN381_Project_Call_Center_Group_8
                 catch (Exception e)
                 {
                     MessageBox.Show(e.ToString());
+                }
+                finally
+                {
+                    //Closing the connection
+                    conn.Close();
                 }
             }
             else if (userType == "admin")
@@ -404,6 +486,11 @@ namespace SEN381_Project_Call_Center_Group_8
                 catch (Exception e)
                 {
                     MessageBox.Show(e.ToString());
+                }
+                finally
+                {
+                    //Closing the connection
+                    conn.Close();
                 }
             }
             else
