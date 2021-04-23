@@ -40,7 +40,7 @@ values('321879645369785', 'Elesh','Talaat', 0, 'eTalaat', '1234')
 GO
 /*Creating the ADMINSTARTOR's table - END*/
 
-/*Creating the indivisual client table - START*/
+/*Creating the individual client table - START*/
 Create table clientIndividual(
 	id varchar(15) PRIMARY KEY, 
 	name varchar(100) not null,
@@ -101,6 +101,16 @@ VALUES
 ('123456987256319', 'olympus recorders', 'Midrand - South Africa', 'olympus123@gmail.com', 1, 'oRec', '1234')
 GO
 /*Creating the BUSINESS client table - END*/
+
+/*Creating the PHONE table - START*/
+create table phoneNumber(
+	id int not null IDENTITY(1,1) PRIMARY KEY,
+	phoneNumber varchar(10) not null,
+	clientNumber varchar(15) not null,
+	clientType varchar(15)
+);
+GO
+/*Creating the PHONE table - END*/
 
 /*Creating the Calls table - Start*/
 create table calls(
@@ -186,12 +196,13 @@ select * from technician
 Select * from calls
 select * from sms
 select * from techRequest
+select * from phoneNumber
 GO
 
 
 /*USEFULL QUERRIES*/
 /*DROP TABLES*/
-DROP table adminstrators
+DROP table phoneNumber
 go
 /*DELETE ENTRY*/
 delete from clientIndividual where id='@id'
