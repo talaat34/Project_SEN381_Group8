@@ -60,12 +60,8 @@ namespace SEN381_Project_Call_Center_Group_8
             /*Manu Sidebar Navigation - END*/
 
             /*THIS IS TO IMPLEMENT THE CALL FUNCTIONALITY - START*/
-            string callID = common.generateID(10);
-            string callLength = common.generateRandomNumber(0,25).ToString();
-            string callTime = common.date_time();
-            string callStat = "Not Answered";
-            string clientID = loginPersonDetails.id;
-            string empID = "";
+            PresentationLayer.phone_call pc = new PresentationLayer.phone_call("client", loginPersonDetails.id);
+            pc.Show();
             /*THIS IS TO IMPLEMENT THE CALL FUNCTIONALITY - END*/
         }
 

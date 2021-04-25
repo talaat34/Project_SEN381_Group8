@@ -52,10 +52,7 @@ namespace SEN381_Project_Call_Center_Group_8
             callInterval = Common.generateRandomNumber(10, 100);
 
             //Loading calls into list
-            SoundPlayer callOne = new SoundPlayer(@"C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\RESOURCES\sample_call_3_Trimmed.wav");
-            SoundPlayer callTwo = new SoundPlayer(@"C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\RESOURCES\sample_call_4.wav");
-            callSamples.Add(callOne);
-            callSamples.Add(callTwo);
+            callSamples = Common.customer_employee_conversation();
         }
 
         

@@ -768,7 +768,6 @@ namespace SEN381_Project_Call_Center_Group_8
             {
                 //FIRST OF ALL WE NEED TO INSERT THE REQUEST MADE BY THE CLIENT SO WE CAN GET THAT REQUEST'S ID
                 //SO WE CAN INSERT THE ID IN THE CALL TABLE
-
                 //INSERTING THE REUQEST - START
                 string clientType = "";
                 string clientID = "";
@@ -785,110 +784,58 @@ namespace SEN381_Project_Call_Center_Group_8
                 string reqID = insertRequest(clientType, clientID, cls.EmpID);
                 //INSERTING THE REUQEST - END
 
-                if (stat == "Answered")
+                //Inserting the call - START
+                cls.CallStatus = stat;
+                if (cls.BusiID == null)
                 {
-                    cls.CallStatus = stat;
-                    if (cls.BusiID == null)
+                    query = "insert into calls(callID, callLength, callTime, callStat,indiID,empID,requestID)";
+                    query += "VALUES('"+cls.CallID+ "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.IndiID + "', '" + cls.EmpID + "','" + reqID + "')";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        query = "insert into calls(callID, callLength, callTime, callStat,indiID,empID,requestID)";
-                        query += "VALUES('"+cls.CallID+ "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.IndiID + "', '" + cls.EmpID + "','" + reqID + "')";
-                        using (SqlCommand cmd = new SqlCommand(query, conn))
-                        {
-                            conn.Open();
+                        conn.Open();
 
-                            try
+                        try
+                        {
+                            int res = cmd.ExecuteNonQuery();
+                            if (res > 0)
                             {
-                                int res = cmd.ExecuteNonQuery();
-                                if (res > 0)
-                                {
-                                    error_success_msg = "Call have been recoreded successfully";
-                                }
+                                error_success_msg = "Call have been recoreded successfully";
                             }
-                            catch (Exception e)
-                            {
-                                error_success_msg = e.ToString();
-                            }
+                        }
+                        catch (Exception e)
+                        {
+                            error_success_msg = e.ToString();
+                        }
                             
                             
-                        }
-                    }
-                    else
-                    {
-                        query = "insert into calls(callID, callLength, callTime, callStat, busiID,empID,requestID)";
-                        query += "VALUES('" + cls.CallID + "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.BusiID + "', '" + cls.EmpID + "','" + reqID + "')";
-                        using (SqlCommand cmd = new SqlCommand(query, conn))
-                        {
-                            conn.Open();
-
-                            try
-                            {
-                                int res = cmd.ExecuteNonQuery();
-                                if (res > 0)
-                                {
-                                    error_success_msg = "Call have been recoreded successfully";
-                                }
-                            }
-                            catch (Exception e)
-                            {
-                                error_success_msg = e.ToString();
-                            }
-
-
-                        }
                     }
                 }
-                else if (stat == "Canceled")
+                else
                 {
-                    cls.CallStatus = stat;
-                    if (cls.BusiID == null)
+                    query = "insert into calls(callID, callLength, callTime, callStat, busiID,empID,requestID)";
+                    query += "VALUES('" + cls.CallID + "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.BusiID + "', '" + cls.EmpID + "','" + reqID + "')";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        query = "insert into calls(callID, callLength, callTime, callStat,indiID,empID,requestID)";
-                        query += "VALUES('" + cls.CallID + "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.IndiID + "', '" + cls.EmpID + "','" + reqID + "')";
-                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        conn.Open();
+
+                        try
                         {
-                            conn.Open();
-
-                            try
+                            int res = cmd.ExecuteNonQuery();
+                            if (res > 0)
                             {
-                                int res = cmd.ExecuteNonQuery();
-                                if (res > 0)
-                                {
-                                    error_success_msg = "Call have been recoreded successfully";
-                                }
+                                error_success_msg = "Call have been recoreded successfully";
                             }
-                            catch (Exception e)
-                            {
-                                error_success_msg = e.ToString();
-                            }
-
-
                         }
-                    }
-                    else
-                    {
-                        query = "insert into calls(callID, callLength, callTime, callStat, busiID,empID,requestID)";
-                        query += "VALUES('" + cls.CallID + "', '" + cls.CallLength + " min', '" + cls.CallTime + "', '" + cls.CallStatus + "', '" + cls.BusiID + "', '" + cls.EmpID + "','" + reqID + "')";
-                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        catch (Exception e)
                         {
-                            conn.Open();
-
-                            try
-                            {
-                                int res = cmd.ExecuteNonQuery();
-                                if (res > 0)
-                                {
-                                    error_success_msg = "Call have been recoreded successfully";
-                                }
-                            }
-                            catch (Exception e)
-                            {
-                                error_success_msg = e.ToString();
-                            }
-
-
+                            error_success_msg = e.ToString();
                         }
+
+
                     }
                 }
+                //INSERTING THE CALL - END
+
             }
             //INSERTING THE CALL - END
             return error_success_msg;

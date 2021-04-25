@@ -17,7 +17,7 @@ namespace SEN381_Project_Call_Center_Group_8
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             MessageBoxManager.Register();
-            Application.Run(new PresentationLayer.phone_dialer());
+            Application.Run(new login());
             MessageBoxManager.Unregister();
         }
     }

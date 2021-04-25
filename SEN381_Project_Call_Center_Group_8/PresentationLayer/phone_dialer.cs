@@ -122,12 +122,23 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
 
         private void BtnCall_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            //Since this is the client there will be no phone numbers required
+            //as he or she will be calling the call center and the call center will have
+            //One constant number whiche is 012-222-3333
+
+            //this.Hide();-
             //phone_call ph = new phone_call("yes");
             //ph.Show();
-            string phoneNumber = txtClientID.Text;
-            string res = vl.initiateOutgoingCall(phoneNumber);
-            MessageBox.Show(res);
+            //string phoneNumber = txtClientID.Text;
+            //string res = vl.initiateOutgoingCall(phoneNumber);
+            //if (true)
+            //{
+
+            //}
+            //else
+            //{
+
+            //}
         }
     }
 }

@@ -14,5 +14,7 @@ namespace SEN381_Project_Call_Center_Group_8
         public static string id;
         public static string username;
         public static string password;
+        //This will only be applied if a client logs in
+        public static string clientType;
     }
 }

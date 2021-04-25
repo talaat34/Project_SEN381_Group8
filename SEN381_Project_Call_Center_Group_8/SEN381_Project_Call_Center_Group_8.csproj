@@ -66,6 +66,8 @@
     <Compile Include="alert.Designer.cs">
       <DependentUpon>alert.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusinessLogic\getDB_items.cs" />
+    <Compile Include="BusinessLogic\sendDB_items.cs" />
     <Compile Include="BusinessLogic\Validations.cs" />
     <Compile Include="clientDashboard.cs">
       <SubType>Form</SubType>

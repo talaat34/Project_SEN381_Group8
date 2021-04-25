@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Media;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Threading;
@@ -13,6 +14,21 @@ namespace SEN381_Project_Call_Center_Group_8
         //Objects - START
         Random rand = new Random();
         //Objects - END
+
+        //This is a method that will contain a full list of conversations between the custimer
+        //AND employee
+        public List<SoundPlayer> customer_employee_conversation()
+        {
+            List<SoundPlayer> sp = new List<SoundPlayer>();
+
+            //Loading calls into list
+            SoundPlayer callOne = new SoundPlayer(@"C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\RESOURCES\sample_call_3_Trimmed.wav");
+            SoundPlayer callTwo = new SoundPlayer(@"C:\Users\user-pc\Desktop\TALAAT BCom 3rd YEAR\SEN381\Project\RESOURCES\sample_call_4.wav");
+            sp.Add(callOne);
+            sp.Add(callTwo);
+
+            return sp;
+        }
 
         /*THIS METHOD IS TO GENERATE A RANDOM USER PHONE NUMBER - START*/
         public string phoneNumber()
@@ -121,6 +137,13 @@ namespace SEN381_Project_Call_Center_Group_8
             Random random = new Random();
             int randomNum = random.Next(strt, end);
             return randomNum;
+        }
+
+        //THIS METHOD IS PRIMARILY USED FOR COLLECTIONS
+        public int generateRandomColectionNumber(int collectionCount)
+        {
+            int number = rand.Next(collectionCount);
+            return number;
         }
 
         public string generateID(int length)

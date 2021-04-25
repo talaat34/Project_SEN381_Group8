@@ -119,7 +119,7 @@
             this.lblCalling.AutoSize = true;
             this.lblCalling.BackColor = System.Drawing.Color.Transparent;
             this.lblCalling.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblCalling.Location = new System.Drawing.Point(122, 238);
+            this.lblCalling.Location = new System.Drawing.Point(132, 238);
             this.lblCalling.Name = "lblCalling";
             this.lblCalling.Size = new System.Drawing.Size(121, 31);
             this.lblCalling.TabIndex = 1;
@@ -133,11 +133,11 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblUsername.Location = new System.Drawing.Point(136, 95);
+            this.lblUsername.Location = new System.Drawing.Point(98, 95);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(112, 39);
+            this.lblUsername.Size = new System.Drawing.Size(188, 39);
             this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "Talaat";
+            this.lblUsername.Text = "Call Center";
             // 
             // lblPhoneNumber
             // 
@@ -151,21 +151,21 @@
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(207, 39);
             this.lblPhoneNumber.TabIndex = 0;
-            this.lblPhoneNumber.Text = "0817580827";
+            this.lblPhoneNumber.Text = "0122223333";
             // 
             // lblUserID
             // 
             this.lblUserID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUserID.AutoSize = true;
             this.lblUserID.BackColor = System.Drawing.Color.Transparent;
             this.lblUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblUserID.Location = new System.Drawing.Point(89, 36);
+            this.lblUserID.Location = new System.Drawing.Point(12, 39);
             this.lblUserID.Name = "lblUserID";
-            this.lblUserID.Size = new System.Drawing.Size(188, 39);
+            this.lblUserID.Size = new System.Drawing.Size(360, 39);
             this.lblUserID.TabIndex = 0;
-            this.lblUserID.Text = "012589647";
+            this.lblUserID.Text = "12134569871236";
+            this.lblUserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // phone_call
             // 

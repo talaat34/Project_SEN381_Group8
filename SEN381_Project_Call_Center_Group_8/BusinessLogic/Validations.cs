@@ -38,8 +38,9 @@ namespace SEN381_Project_Call_Center_Group_8.BusinessLogic
                     string pNumber = ds.Tables[0].Rows[0][1].ToString();
                     string clientNumber = ds.Tables[0].Rows[0][2].ToString();
                     string cleintType = ds.Tables[0].Rows[0][3].ToString();
-
-                    error_success_msg = pNumber + clientNumber + cleintType;
+                    
+                    //Client Details
+                    error_success_msg = pNumber +","+ clientNumber +","+ cleintType;
                 }
                 else
                 {

@@ -177,6 +177,7 @@ namespace SEN381_Project_Call_Center_Group_8
                                     loginPersonDetails.id = busiClient.Id;
                                     loginPersonDetails.username = busiClient.Username;
                                     loginPersonDetails.password = busiClient.Password;
+                                    loginPersonDetails.clientType = "businessClient";
 
                                     //Closing the login form and opeing the Business client dashboard
                                     this.Hide();
@@ -206,6 +207,7 @@ namespace SEN381_Project_Call_Center_Group_8
                                     loginPersonDetails.id = indClient.Id;
                                     loginPersonDetails.username = indClient.Username;
                                     loginPersonDetails.password = indClient.Password;
+                                    loginPersonDetails.clientType = "clientIndividual";
 
                                     //This is for the database table name label - Start
                                     clientDashboard cd = new clientDashboard();
