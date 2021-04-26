@@ -143,6 +143,59 @@ namespace SEN381_Project_Call_Center_Group_8
             btnReloadData.Visible = false;
         }
 
+
+        private void BtnCallClient_Click(object sender, EventArgs e)
+        {
+            int index = dgvCalls.CurrentRow.Index;
+            string clientID;
+            string tableName;
+            string colName;
+            string username;
+            DataSet ds;
+            if (dgvCalls.Rows[index].Cells[4].Value.ToString() == "")
+            {
+                clientID = dgvCalls.Rows[index].Cells[5].Value.ToString();
+            }
+            else
+            {
+                clientID = dgvCalls.Rows[index].Cells[4].Value.ToString();
+            }
+            //First we need to get the client's info from the phoneNumber Table
+            tableName = "phoneNumber";
+            colName = "clientNumber";
+            ds = access.searchForData(tableName, colName, clientID, "");
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                Common.alertt("THIS CLIENT WAS A TEST CASE AND THUS THEY DONT HAVE A PHONE NUMBER.");
+            }
+            else
+            {
+                string phoneNumber = ds.Tables[0].Rows[0][1].ToString();
+                //We go the clientID at the top so no need to get it again
+                string clientType = ds.Tables[0].Rows[0][3].ToString();
+
+                //Now we need to get the user's username depending on the clientID
+                if (clientType == "individual")
+                {
+                    tableName = "clientIndividual";
+                }
+                else
+                {
+                    tableName = "businessClient";
+                }
+                colName = "id";
+                ds = access.searchForData(tableName, colName, clientID, "");
+                username = ds.Tables[0].Rows[0][5].ToString();
+                //WE GOT THE FOLLOWING INFO
+                //1. clientID
+                //2. username
+                //3. phone number
+                //THEREFORE WE CAN INSTANTIATE THE CALL
+                PresentationLayer.phone_call pc = new PresentationLayer.phone_call("adminstrator", clientID, username, phoneNumber, clientType);
+                pc.Show();
+            }
+        }
+
         //This part is for adding placeholder to the textbox - START
         private void TxtSearhBox_Enter(object sender, EventArgs e)
         {

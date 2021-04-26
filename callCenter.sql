@@ -195,7 +195,7 @@ Select * from businessClient
 select * from technician
 Select * from calls order by callTime DESC
 select * from sms
-select * from techRequest
+select * from techRequest 
 select * from phoneNumber
 GO
 
@@ -215,3 +215,6 @@ go
 /*UPDATE*/
 update techRequest set completed=1 where id='766916907793714' AND acceptedTechnicianID='ABCG12357951264'
 GO
+update phoneNumber set phoneNumber='0466590825' where clientNumber='E00000009'
+GO
+

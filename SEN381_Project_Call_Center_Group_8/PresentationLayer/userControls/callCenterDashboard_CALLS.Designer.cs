@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(callCenterDashboard_CALLS));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dgvCalls = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -46,10 +46,12 @@
             this.txtSearhBox = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.PictureBox();
             this.btnReloadData = new System.Windows.Forms.PictureBox();
+            this.btnCallClient = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalls)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReloadData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCallClient)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -61,19 +63,19 @@
             // 
             this.dgvCalls.AllowUserToAddRows = false;
             this.dgvCalls.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvCalls.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvCalls.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCalls.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.dgvCalls.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCalls.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(147)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCalls.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(147)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCalls.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCalls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCalls.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
@@ -194,7 +196,7 @@
             // btnDelete
             // 
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(746, 25);
+            this.btnDelete.Location = new System.Drawing.Point(677, 25);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(51, 40);
@@ -206,7 +208,7 @@
             // btnReloadData
             // 
             this.btnReloadData.Image = ((System.Drawing.Image)(resources.GetObject("btnReloadData.Image")));
-            this.btnReloadData.Location = new System.Drawing.Point(690, 25);
+            this.btnReloadData.Location = new System.Drawing.Point(627, 25);
             this.btnReloadData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReloadData.Name = "btnReloadData";
             this.btnReloadData.Size = new System.Drawing.Size(44, 40);
@@ -216,12 +218,25 @@
             this.btnReloadData.Visible = false;
             this.btnReloadData.Click += new System.EventHandler(this.BtnReloadAfterSearch_Click);
             // 
+            // btnCallClient
+            // 
+            this.btnCallClient.Image = ((System.Drawing.Image)(resources.GetObject("btnCallClient.Image")));
+            this.btnCallClient.Location = new System.Drawing.Point(734, 26);
+            this.btnCallClient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCallClient.Name = "btnCallClient";
+            this.btnCallClient.Size = new System.Drawing.Size(51, 40);
+            this.btnCallClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCallClient.TabIndex = 2;
+            this.btnCallClient.TabStop = false;
+            this.btnCallClient.Click += new System.EventHandler(this.BtnCallClient_Click);
+            // 
             // callCenterDashboard_CALLS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.txtSearhBox);
+            this.Controls.Add(this.btnCallClient);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnReloadData);
             this.Controls.Add(this.btnSearch);
@@ -235,6 +250,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReloadData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCallClient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +272,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colBusi;
         private System.Windows.Forms.DataGridViewTextBoxColumn empID;
         private System.Windows.Forms.DataGridViewTextBoxColumn requestID;
+        private System.Windows.Forms.PictureBox btnCallClient;
     }
 }

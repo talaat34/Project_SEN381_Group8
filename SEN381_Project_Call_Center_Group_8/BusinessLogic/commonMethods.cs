@@ -45,11 +45,11 @@ namespace SEN381_Project_Call_Center_Group_8
             }
 
             //Creating the three middle numbers of the phone number
-            number = rand.Next(0, 948);
+            number = rand.Next(100, 999);
             phoneNumber = phoneNumber.Append(number.ToString());
 
             //Creating the four last numbers of the phone number
-            number = rand.Next(0, 10000);
+            number = rand.Next(1000, 10000);
             phoneNumber = phoneNumber.Append(number.ToString());
 
             //Return the phone numebr

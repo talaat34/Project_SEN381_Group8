@@ -145,6 +145,7 @@ namespace SEN381_Project_Call_Center_Group_8
                                     loginPersonDetails.id = admin.ID;
                                     loginPersonDetails.username = admin.Username;
                                     loginPersonDetails.password = admin.Password;
+                                    loginPersonDetails.clientType = "adminstrator";
                                 }
 
 

@@ -116,42 +116,42 @@
             this.lblCalling.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalling.AutoSize = true;
             this.lblCalling.BackColor = System.Drawing.Color.Transparent;
             this.lblCalling.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblCalling.Location = new System.Drawing.Point(132, 238);
+            this.lblCalling.Location = new System.Drawing.Point(16, 238);
             this.lblCalling.Name = "lblCalling";
-            this.lblCalling.Size = new System.Drawing.Size(121, 31);
+            this.lblCalling.Size = new System.Drawing.Size(353, 31);
             this.lblCalling.TabIndex = 1;
             this.lblCalling.Text = "Calling...";
+            this.lblCalling.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUsername
             // 
             this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblUsername.Location = new System.Drawing.Point(98, 95);
+            this.lblUsername.Location = new System.Drawing.Point(8, 95);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(188, 39);
+            this.lblUsername.Size = new System.Drawing.Size(369, 39);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Call Center";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblPhoneNumber.Location = new System.Drawing.Point(89, 166);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(12, 166);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(207, 39);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(360, 39);
             this.lblPhoneNumber.TabIndex = 0;
             this.lblPhoneNumber.Text = "0122223333";
+            this.lblPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUserID
             // 
@@ -179,7 +179,6 @@
             this.Text = "phone_call";
             this.Load += new System.EventHandler(this.Phone_call_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

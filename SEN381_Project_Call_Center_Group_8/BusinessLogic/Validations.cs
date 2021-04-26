@@ -50,5 +50,51 @@ namespace SEN381_Project_Call_Center_Group_8.BusinessLogic
 
             return error_success_msg;
         }
+
+        public dynamic getUserDetails(string clientNumber, string clientType)
+        {
+            string tableName;
+            string colName = "id";
+            string order_by = "";
+            //Client details - START
+            string id;
+            string name;
+            int verified;
+            string username;
+            string password;
+            //Client details - END
+            if (clientType == "individual")
+            {
+                List<individualClient> indiClientUser = new List<individualClient>();
+                tableName = "clientIndividual";
+                ds = access.searchForData(tableName, colName, clientNumber, order_by);
+                id = ds.Tables[0].Rows[0][0].ToString();
+                name = ds.Tables[0].Rows[0][1].ToString();
+                string surname = ds.Tables[0].Rows[0][2].ToString();
+                string role = ds.Tables[0].Rows[0][3].ToString();
+                verified = int.Parse(ds.Tables[0].Rows[0][4].ToString());
+                username = ds.Tables[0].Rows[0][5].ToString();
+                password = ds.Tables[0].Rows[0][6].ToString();
+                indiClientUser.Add(new individualClient(id, name, surname, role, verified, username, password));
+                return indiClientUser;
+            }
+            else if (clientType == "business")
+            {
+                List<BusinessClient> busiClientUser = new List<BusinessClient>();
+                tableName = "businessClient";
+                ds = access.searchForData(tableName, colName, clientNumber, order_by);
+                id = ds.Tables[0].Rows[0][0].ToString();
+                name = ds.Tables[0].Rows[0][1].ToString();
+                string location = ds.Tables[0].Rows[0][2].ToString();
+                string email = ds.Tables[0].Rows[0][3].ToString();
+                verified = int.Parse(ds.Tables[0].Rows[0][4].ToString());
+                username = ds.Tables[0].Rows[0][5].ToString();
+                password = ds.Tables[0].Rows[0][6].ToString();
+                busiClientUser.Add(new BusinessClient(id, name, location, email, verified, username, password));
+                return busiClientUser;
+            }
+
+            return null;
+        }
     }
 }

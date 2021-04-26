@@ -37,6 +37,7 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
 
         private void CloseBtn_Click(object sender, EventArgs e)
         {
+            txtClientID.Text = "";
             this.Close();
         }
 
@@ -124,21 +125,43 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
         {
             //Since this is the client there will be no phone numbers required
             //as he or she will be calling the call center and the call center will have
-            //One constant number whiche is 012-222-3333
+            //One constant number whiche is 012 - 222 - 3333
 
-            //this.Hide();-
-            //phone_call ph = new phone_call("yes");
-            //ph.Show();
-            //string phoneNumber = txtClientID.Text;
-            //string res = vl.initiateOutgoingCall(phoneNumber);
-            //if (true)
-            //{
+            string phoneNumber = txtClientID.Text;
+            string res = vl.initiateOutgoingCall(phoneNumber);
+            if (res.Contains(","))
+            {
+                string[] details = res.Split(',');
+                string clientPhineNumber = details[0];
+                string clientNumber = details[1];
+                string clientType = details[2];
+                string clientUsername = "";
 
-            //}
-            //else
-            //{
-
-            //}
+                if (clientType == "individual")
+                {
+                    List<individualClient> indiUserDetail = vl.getUserDetails(clientNumber, clientType);
+                    foreach (var item in indiUserDetail)
+                    {
+                        clientUsername = item.Username;
+                    }
+                }
+                else
+                {
+                    List<BusinessClient> busiUserDetail = vl.getUserDetails(clientNumber, clientType);
+                    foreach (var item in busiUserDetail)
+                    {
+                        clientUsername = item.Username;
+                    }
+                }
+                //Initiate call
+                this.Hide();
+                phone_call pc = new phone_call("adminstrators", clientNumber, clientUsername, clientPhineNumber, clientType);
+                pc.Show();
+            }
+            else
+            {
+                MessageBox.Show(res);
+            }
         }
     }
 }

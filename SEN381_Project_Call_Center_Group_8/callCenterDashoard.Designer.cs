@@ -45,6 +45,7 @@
             this.callCenterDashboard_MSGs1 = new SEN381_Project_Call_Center_Group_8.callCenterDashboard_MSGs();
             this.callCenterDashboard_CALLS1 = new SEN381_Project_Call_Center_Group_8.callCenterDashboard_CALLS();
             this.callTimer = new System.Windows.Forms.Timer(this.components);
+            this.btnCallClient = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -91,14 +92,14 @@
             this.btnMessegesAdmin.IconVisible = true;
             this.btnMessegesAdmin.IconZoom = 90D;
             this.btnMessegesAdmin.IsTab = false;
-            this.btnMessegesAdmin.Location = new System.Drawing.Point(0, 344);
+            this.btnMessegesAdmin.Location = new System.Drawing.Point(0, 342);
             this.btnMessegesAdmin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnMessegesAdmin.Name = "btnMessegesAdmin";
             this.btnMessegesAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnMessegesAdmin.OnHovercolor = System.Drawing.Color.White;
             this.btnMessegesAdmin.OnHoverTextColor = System.Drawing.Color.RoyalBlue;
             this.btnMessegesAdmin.selected = false;
-            this.btnMessegesAdmin.Size = new System.Drawing.Size(267, 70);
+            this.btnMessegesAdmin.Size = new System.Drawing.Size(267, 72);
             this.btnMessegesAdmin.TabIndex = 0;
             this.btnMessegesAdmin.Text = "             MESSAGES";
             this.btnMessegesAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,6 +220,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnCallClient);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -229,12 +231,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 272);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -325,7 +327,45 @@
             // 
             // callTimer
             // 
+            this.callTimer.Interval = 1000;
             this.callTimer.Tick += new System.EventHandler(this.CallTimer_Tick);
+            // 
+            // btnCallClient
+            // 
+            this.btnCallClient.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCallClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCallClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCallClient.BorderRadius = 0;
+            this.btnCallClient.ButtonText = "             CALL CLIENT";
+            this.btnCallClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCallClient.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCallClient.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCallClient.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCallClient.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCallClient.Iconimage")));
+            this.btnCallClient.Iconimage_right = null;
+            this.btnCallClient.Iconimage_right_Selected = null;
+            this.btnCallClient.Iconimage_Selected = null;
+            this.btnCallClient.IconMarginLeft = 0;
+            this.btnCallClient.IconMarginRight = 0;
+            this.btnCallClient.IconRightVisible = true;
+            this.btnCallClient.IconRightZoom = 0D;
+            this.btnCallClient.IconVisible = true;
+            this.btnCallClient.IconZoom = 90D;
+            this.btnCallClient.IsTab = false;
+            this.btnCallClient.Location = new System.Drawing.Point(0, 202);
+            this.btnCallClient.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnCallClient.Name = "btnCallClient";
+            this.btnCallClient.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCallClient.OnHovercolor = System.Drawing.Color.White;
+            this.btnCallClient.OnHoverTextColor = System.Drawing.Color.RoyalBlue;
+            this.btnCallClient.selected = false;
+            this.btnCallClient.Size = new System.Drawing.Size(267, 70);
+            this.btnCallClient.TabIndex = 1;
+            this.btnCallClient.Text = "             CALL CLIENT";
+            this.btnCallClient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCallClient.Textcolor = System.Drawing.Color.White;
+            this.btnCallClient.TextFont = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCallClient.Click += new System.EventHandler(this.BtnCallClient_Click);
             // 
             // callCenterDashoard
             // 
@@ -369,5 +409,6 @@
         private callCenterDashboard_PROFILE callCenterDashboard_PROFILE1;
         private callCenterDashboard_MSGs callCenterDashboard_MSGs1;
         private callCenterDashboard_CALLS callCenterDashboard_CALLS1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCallClient;
     }
 }

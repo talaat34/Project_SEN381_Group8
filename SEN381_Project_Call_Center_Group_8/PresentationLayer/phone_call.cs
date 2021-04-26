@@ -34,19 +34,72 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
         bool _conversationOn = false;
 
         //THIS INVOLVES THE DETAILS OF THE CALL
-        string callID, callTime, indiID, busiID, empID, requestID;
+        string callID, callTime, indiID, busiID, empID;
         int callLength = 0;
 
         /*Some Fields and Properties - START*/
         private string prev_form;
         private string clientID;
+        private string clientType;
+        private string clientUsername;
+        private string clientPhoneNumber;
         private string callStat;
 
         public string Prev_form { get => prev_form; set => prev_form = value; }
         public string ClientID { get => clientID; set => clientID = value; }
         public string CallStat { get => callStat; set => callStat = value; }
+        public string ClientUsername { get => clientUsername; set => clientUsername = value; }
+        public string ClientPhoneNumber { get => clientPhoneNumber; set => clientPhoneNumber = value; }
+        public string ClientType { get => clientType; set => clientType = value; }
 
-        //paramertarized constructor
+        //paramertarized constructors
+        public phone_call(string prev_form, string clientID, string clientUsername, string clientPhoneNumber, string clientTp)
+        {
+            InitializeComponent();
+
+            //Loading the conversation between customer and employee
+            conversation = common.customer_employee_conversation();
+
+            //This is to delay some time 
+            //Because if a play the calloing ringtone right away the phone_call form
+            //never appears until the ringtone is stopped/finshed
+            common.delaySomeTime(1000, new Action(() => {
+
+                //This variable will be used to detect if the player is on or not
+                //So that when the user clicks on the cancel call button
+                //The player is stopped when the form closes
+                _playerOn = true;
+
+                player.Play();
+            }));
+
+            //The prevois form will be used to navigate back to the previos form if it was closed
+            Prev_form = prev_form;
+            ClientID = clientID;
+            ClientUsername = clientUsername;
+            ClientPhoneNumber = clientPhoneNumber;
+            ClientType = clientTp;
+
+            //Setting the client id to the 'label user id'
+            lblUserID.Text = ClientID;
+            lblPhoneNumber.Text = ClientPhoneNumber;
+            lblUsername.Text = ClientUsername;
+
+            //Here i will generate a random number 
+            //IF the generated number is between 0 AND 11 
+            //===> Then the callStat will be regarded as answered.
+            //Else if the generated number is between 10 and 10
+            //===> Then the callStat will be regarded as notAnswered
+            int randomNumber = common.generateRandomNumber(1, 21);
+            if (randomNumber <= 10)
+            {
+                CallStat = "Answered";
+            }
+            else
+            {
+                CallStat = "Canceled";
+            }
+        }
         public phone_call(string prev_form, string clientID)
         {
             InitializeComponent();
@@ -146,24 +199,24 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
         }
         private void BtnCancelCall_Click(object sender, EventArgs e)
         {
-            //We have to do insertion of data when the call is cancelled
-            //Insert the call Into database - START
-            insertCall("Not-Answered");
-            //Insert the call Into database - END
+            this.Hide();
 
             if (_playerOn == true)
             {
+                //We have to do insertion of data when the call is cancelled
+                //Insert the call Into database - START
+                insertCall("Not-Answered");
+                //Insert the call Into database - END
+
                 _playerOn = false;
                 player.Stop();
                 if (prev_form == "client")
                 {
-                    this.Hide();
                     clientDashboard cd = new clientDashboard();
                     cd.Show();
                 }
                 else if (prev_form == "adminstrator")
                 {
-                    this.Hide();
                     callCenterDashoard ccd = new callCenterDashoard();
                     ccd.Show();
                 }
@@ -174,6 +227,7 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
             }
             else if (_conversationOn == true)
             {
+                lblCalling.Text = "Calling...";
                 issuePlayer.Stop();
             }
         }
@@ -204,6 +258,7 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
                 //Insert the call Into database - END
 
                 //Insert the call Into database - START
+                lblCalling.Text = "Conversation";
                 issuePlayer.Play();
 
             }
@@ -227,18 +282,37 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
                 busiID = clientID;
                 indiID = null;
             }
+            //THESE TWO ELSE IF STATEMENST WILL BE USED IN CASE AN ADMINSTARTOR IS LOGGED IN
+            else if (ClientType == "individual")
+            {
+                indiID = clientID;
+                busiID = null;
+            }
+            else if(ClientType == "business")
+            {
+                busiID = clientID;
+                indiID = null;
+            }
             //Getting a random call venter empoloyee's ID - START
             string tableName = "adminstrators";
             string colName = "id";
             List<DataRow> dr = getDB_Items.getCol_data(tableName, colName);
             int randIndex = common.generateRandomColectionNumber(dr.Count);
-            if (clStat == "Answered")
+            if (loginPersonDetails.clientType == "adminstrator")
             {
-                empID = dr[randIndex][0].ToString();
+                empID = loginPersonDetails.id;
             }
             else
             {
-                empID = "";
+                if (clStat == "Answered")
+                {
+                    empID = dr[randIndex][0].ToString();
+                }
+
+                else
+                {
+                    empID = "";
+                }
             }
             //Getting a random call venter empoloyee's ID - END
             calls cls = new calls(callID, actuallCallLength, callTime, CallStat, indiID, busiID, empID);

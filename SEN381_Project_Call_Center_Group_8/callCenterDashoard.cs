@@ -185,5 +185,13 @@ namespace SEN381_Project_Call_Center_Group_8
             login lg = new login();
             lg.Show();
         }
+
+        //Method will be used to call client manually
+        private void BtnCallClient_Click(object sender, EventArgs e)
+        {
+            //all we need to do here is open the phone dialer
+            PresentationLayer.phone_dialer pd = new PresentationLayer.phone_dialer();
+            pd.Show();
+        }
     }
 }
