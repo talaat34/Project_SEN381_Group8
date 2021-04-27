@@ -19,8 +19,8 @@ namespace SEN381_Project_Call_Center_Group_8
         SqlCommand cmd;
         public dbAcccess()
         {
-            connBuilder.DataSource = @"(LocalDB)\MSSQLLocalDB";
-            connBuilder.InitialCatalog = "CallCenterDB";
+            connBuilder.DataSource = @"DESKTOP-G1MKRAF";
+            connBuilder.InitialCatalog = "Sen381CallCenterDB";
             connBuilder.IntegratedSecurity = true;
         }
 

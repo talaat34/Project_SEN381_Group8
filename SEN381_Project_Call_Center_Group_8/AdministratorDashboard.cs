@@ -16,5 +16,10 @@ namespace SEN381_Project_Call_Center_Group_8
         {
             InitializeComponent();
         }
+
+        private void BtnInsertAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

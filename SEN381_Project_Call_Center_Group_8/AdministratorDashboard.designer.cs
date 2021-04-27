@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministratorDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnViewTable = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUpdateAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblAdminDashBoard = new System.Windows.Forms.Label();
             this.dgAdminDashboard = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnViewTable);
             this.panel1.Controls.Add(this.btnUpdateAdmin);
             this.panel1.Controls.Add(this.btnRemoveAdmin);
@@ -63,9 +65,8 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 692);
+            this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 1;
             // 
             // btnViewTable
@@ -89,14 +90,14 @@
             this.btnViewTable.IconVisible = true;
             this.btnViewTable.IconZoom = 90D;
             this.btnViewTable.IsTab = false;
-            this.btnViewTable.Location = new System.Drawing.Point(0, 285);
-            this.btnViewTable.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnViewTable.Location = new System.Drawing.Point(0, 212);
+            this.btnViewTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewTable.Name = "btnViewTable";
             this.btnViewTable.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnViewTable.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnViewTable.OnHoverTextColor = System.Drawing.Color.White;
             this.btnViewTable.selected = false;
-            this.btnViewTable.Size = new System.Drawing.Size(300, 74);
+            this.btnViewTable.Size = new System.Drawing.Size(200, 48);
             this.btnViewTable.TabIndex = 4;
             this.btnViewTable.Text = "View Table";
             this.btnViewTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,14 +125,14 @@
             this.btnUpdateAdmin.IconVisible = true;
             this.btnUpdateAdmin.IconZoom = 90D;
             this.btnUpdateAdmin.IsTab = false;
-            this.btnUpdateAdmin.Location = new System.Drawing.Point(0, 482);
-            this.btnUpdateAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnUpdateAdmin.Location = new System.Drawing.Point(0, 340);
+            this.btnUpdateAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdateAdmin.Name = "btnUpdateAdmin";
             this.btnUpdateAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnUpdateAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnUpdateAdmin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnUpdateAdmin.selected = false;
-            this.btnUpdateAdmin.Size = new System.Drawing.Size(300, 74);
+            this.btnUpdateAdmin.Size = new System.Drawing.Size(200, 34);
             this.btnUpdateAdmin.TabIndex = 3;
             this.btnUpdateAdmin.Text = "Update";
             this.btnUpdateAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,14 +160,14 @@
             this.btnRemoveAdmin.IconVisible = true;
             this.btnRemoveAdmin.IconZoom = 90D;
             this.btnRemoveAdmin.IsTab = false;
-            this.btnRemoveAdmin.Location = new System.Drawing.Point(0, 412);
-            this.btnRemoveAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnRemoveAdmin.Location = new System.Drawing.Point(0, 302);
+            this.btnRemoveAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRemoveAdmin.Name = "btnRemoveAdmin";
             this.btnRemoveAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnRemoveAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnRemoveAdmin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRemoveAdmin.selected = false;
-            this.btnRemoveAdmin.Size = new System.Drawing.Size(300, 74);
+            this.btnRemoveAdmin.Size = new System.Drawing.Size(200, 38);
             this.btnRemoveAdmin.TabIndex = 2;
             this.btnRemoveAdmin.Text = "Remove";
             this.btnRemoveAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,14 +195,14 @@
             this.btnProfileAdmin.IconVisible = true;
             this.btnProfileAdmin.IconZoom = 50D;
             this.btnProfileAdmin.IsTab = false;
-            this.btnProfileAdmin.Location = new System.Drawing.Point(0, 551);
-            this.btnProfileAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnProfileAdmin.Location = new System.Drawing.Point(0, 371);
+            this.btnProfileAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProfileAdmin.Name = "btnProfileAdmin";
             this.btnProfileAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnProfileAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnProfileAdmin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnProfileAdmin.selected = false;
-            this.btnProfileAdmin.Size = new System.Drawing.Size(300, 74);
+            this.btnProfileAdmin.Size = new System.Drawing.Size(200, 35);
             this.btnProfileAdmin.TabIndex = 0;
             this.btnProfileAdmin.Text = "Profile";
             this.btnProfileAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,19 +230,20 @@
             this.BtnInsertAdmin.IconVisible = true;
             this.BtnInsertAdmin.IconZoom = 90D;
             this.BtnInsertAdmin.IsTab = false;
-            this.BtnInsertAdmin.Location = new System.Drawing.Point(0, 343);
-            this.BtnInsertAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.BtnInsertAdmin.Location = new System.Drawing.Point(0, 255);
+            this.BtnInsertAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnInsertAdmin.Name = "BtnInsertAdmin";
             this.BtnInsertAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.BtnInsertAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.BtnInsertAdmin.OnHoverTextColor = System.Drawing.Color.White;
             this.BtnInsertAdmin.selected = false;
-            this.BtnInsertAdmin.Size = new System.Drawing.Size(300, 74);
+            this.BtnInsertAdmin.Size = new System.Drawing.Size(200, 48);
             this.BtnInsertAdmin.TabIndex = 1;
             this.BtnInsertAdmin.Text = "Insert";
             this.BtnInsertAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInsertAdmin.Textcolor = System.Drawing.Color.White;
             this.BtnInsertAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInsertAdmin.Click += new System.EventHandler(this.BtnInsertAdmin_Click);
             // 
             // btnLogoutAdmin
             // 
@@ -264,14 +266,14 @@
             this.btnLogoutAdmin.IconVisible = true;
             this.btnLogoutAdmin.IconZoom = 50D;
             this.btnLogoutAdmin.IsTab = false;
-            this.btnLogoutAdmin.Location = new System.Drawing.Point(0, 618);
-            this.btnLogoutAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnLogoutAdmin.Location = new System.Drawing.Point(0, 402);
+            this.btnLogoutAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogoutAdmin.Name = "btnLogoutAdmin";
             this.btnLogoutAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnLogoutAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnLogoutAdmin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogoutAdmin.selected = false;
-            this.btnLogoutAdmin.Size = new System.Drawing.Size(300, 74);
+            this.btnLogoutAdmin.Size = new System.Drawing.Size(200, 48);
             this.btnLogoutAdmin.TabIndex = 0;
             this.btnLogoutAdmin.Text = "Logout";
             this.btnLogoutAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,9 +285,8 @@
             this.panel4.Controls.Add(this.bunifuImageButton1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 247);
+            this.panel4.Size = new System.Drawing.Size(200, 161);
             this.panel4.TabIndex = 0;
             // 
             // bunifuImageButton1
@@ -294,9 +295,8 @@
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(300, 250);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(200, 162);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 0;
             this.bunifuImageButton1.TabStop = false;
@@ -308,10 +308,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblAdminDashBoard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(900, 83);
+            this.panel2.Size = new System.Drawing.Size(600, 54);
             this.panel2.TabIndex = 2;
             // 
             // label2
@@ -320,10 +319,9 @@
             this.label2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(828, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(552, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 38);
+            this.label2.Size = new System.Drawing.Size(26, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "X";
             // 
@@ -331,52 +329,58 @@
             // 
             this.lblAdminDashBoard.AutoSize = true;
             this.lblAdminDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminDashBoard.Location = new System.Drawing.Point(308, 14);
-            this.lblAdminDashBoard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminDashBoard.Location = new System.Drawing.Point(205, 9);
             this.lblAdminDashBoard.Name = "lblAdminDashBoard";
-            this.lblAdminDashBoard.Size = new System.Drawing.Size(339, 46);
+            this.lblAdminDashBoard.Size = new System.Drawing.Size(230, 31);
             this.lblAdminDashBoard.TabIndex = 0;
             this.lblAdminDashBoard.Text = "Admin Dashboard";
             // 
             // dgAdminDashboard
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgAdminDashboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgAdminDashboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgAdminDashboard.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgAdminDashboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgAdminDashboard.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgAdminDashboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgAdminDashboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgAdminDashboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgAdminDashboard.DoubleBuffered = true;
             this.dgAdminDashboard.EnableHeadersVisualStyles = false;
             this.dgAdminDashboard.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dgAdminDashboard.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgAdminDashboard.Location = new System.Drawing.Point(300, 83);
-            this.dgAdminDashboard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgAdminDashboard.Location = new System.Drawing.Point(200, 54);
             this.dgAdminDashboard.Name = "dgAdminDashboard";
             this.dgAdminDashboard.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgAdminDashboard.RowHeadersWidth = 62;
-            this.dgAdminDashboard.Size = new System.Drawing.Size(900, 609);
+            this.dgAdminDashboard.Size = new System.Drawing.Size(600, 396);
             this.dgAdminDashboard.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // AdministratorDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.Controls.Add(this.dgAdminDashboard);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdministratorDashboard";
             this.Text = "AdministratorDashboard";
             this.panel1.ResumeLayout(false);
@@ -404,5 +408,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgAdminDashboard;
         private Bunifu.Framework.UI.BunifuFlatButton btnViewTable;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -80,3 +80,27 @@ C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_G
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.clientDashboard.resources
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.phone_dialer.resources
 C:\Users\user-pc\source\repos\Project_SEN381_Group8\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.phone_call.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.exe.config
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.exe
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\bin\Debug\SEN381_Project_Call_Center_Group_8.pdb
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csprojAssemblyReference.cache
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.AdministratorDashboard.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.alert.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.clientDashboard.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.phone_call.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.phone_dialer.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_CALLS.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_MSGs.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashboard_PROFILE.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.callCenterDashoard.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.login.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.register.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.splash.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.Properties.Resources.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.TechnicianDashboard.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.userControls.technicianRequest.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.GenerateResource.cache
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CoreCompileInputs.cache
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CopyComplete
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.exe
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.pdb
