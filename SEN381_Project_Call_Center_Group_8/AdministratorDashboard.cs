@@ -21,5 +21,16 @@ namespace SEN381_Project_Call_Center_Group_8
         {
 
         }
+
+        private void btnViewTable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgAdminDashboard_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+       
     }
 }

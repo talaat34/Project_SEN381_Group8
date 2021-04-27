@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SEN381_Project_Call_Center_Group_8.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -19,8 +20,8 @@ namespace SEN381_Project_Call_Center_Group_8
         SqlCommand cmd;
         public dbAcccess()
         {
-            connBuilder.DataSource = @"DESKTOP-G1MKRAF";
-            connBuilder.InitialCatalog = "Sen381CallCenterDB";
+            connBuilder.DataSource = @"(LocalDB)\MSSQLLocalDB";
+            connBuilder.InitialCatalog = "CallCenterDB";
             connBuilder.IntegratedSecurity = true;
         }
 
@@ -913,6 +914,84 @@ namespace SEN381_Project_Call_Center_Group_8
             
         }
         
-        
+        // Added admin insert 
+        public void AdminAdd(admin adminInsert)
+        {
+
+            string query = @"Insert into admin Values('" + adminInsert.Id + "','" + adminInsert.Name + "','" + adminInsert.Surname + "','" + adminInsert.Username + "','" + adminInsert.Password + "')";
+            SqlConnection conn = new SqlConnection(connBuilder.ToString());
+            conn.Open();
+           
+            cmd = new SqlCommand(query, conn);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Details of new admin saved");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Details of new admin not saved:" + e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        // Added Technician
+        public void TechnicianAdd(Technician TechnicianInsert)
+        {
+
+            string query = @"Insert into technician Values('" + TechnicianInsert.TechnicianID1 + "','" + TechnicianInsert.TechnicianName1 + "','" + TechnicianInsert.TechnicianSurname1 + "','" + TechnicianInsert.ServiceTypeID1 + "','" + TechnicianInsert.TechnicianVerified1 + "','" + TechnicianInsert.TechnicianUsername1 + "','" + TechnicianInsert.TechnicianPassword1 + "')";
+            SqlConnection conn = new SqlConnection(connBuilder.ToString());
+            conn.Open();
+
+            cmd = new SqlCommand(query, conn);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Details of new Technician saved");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Details of new Technician not saved:" + e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        public void EquipmentAdd(equipment equipmentInsert)
+        {
+
+            string query = @"Insert into equipment Values('" + equipmentInsert.SerialNr + "','" + equipmentInsert.ModelNr+ "')";
+            SqlConnection conn = new SqlConnection(connBuilder.ToString());
+            conn.Open();
+
+            cmd = new SqlCommand(query, conn);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Details of new Equipment saved");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Details of new Equipment not saved:" + e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+
+
     }
 }

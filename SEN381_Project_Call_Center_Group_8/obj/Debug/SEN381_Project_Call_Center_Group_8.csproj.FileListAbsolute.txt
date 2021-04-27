@@ -104,3 +104,9 @@ C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project
 C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.csproj.CopyComplete
 C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.exe
 C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.pdb
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.AdminDashboard_INSERT.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.InsertAdmin.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.equipment.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.InsertEquipment.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.InsertTechnician.resources
+C:\Users\mail4\OneDrive\Desktop\Class 2021\SEN 381\Project_Sen381\SEN381_Project_Call_Center_Group_8\obj\Debug\SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.InsertTechnicians.resources

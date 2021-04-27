@@ -66,6 +66,7 @@
     <Compile Include="alert.Designer.cs">
       <DependentUpon>alert.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusinessLogic\equipment.cs" />
     <Compile Include="BusinessLogic\getDB_items.cs" />
     <Compile Include="BusinessLogic\sendDB_items.cs" />
     <Compile Include="BusinessLogic\Validations.cs" />
@@ -86,6 +87,12 @@
     </Compile>
     <Compile Include="PresentationLayer\phone_dialer.Designer.cs">
       <DependentUpon>phone_dialer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\AdminDashboard_INSERT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\AdminDashboard_INSERT.Designer.cs">
+      <DependentUpon>AdminDashboard_INSERT.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\userControls\callCenterDashboard_CALLS.cs">
       <SubType>UserControl</SubType>
@@ -129,6 +136,36 @@
     </Compile>
     <Compile Include="PresentationLayer\userControls\customTextBox.Designer.cs">
       <DependentUpon>customTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\equipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\equipment.Designer.cs">
+      <DependentUpon>equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertAdmin.Designer.cs">
+      <DependentUpon>InsertAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertEquipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertEquipment.Designer.cs">
+      <DependentUpon>InsertEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertTechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertTechnician.Designer.cs">
+      <DependentUpon>InsertTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertTechnicians.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\userControls\InsertTechnicians.Designer.cs">
+      <DependentUpon>InsertTechnicians.cs</DependentUpon>
     </Compile>
     <Compile Include="register.cs">
       <SubType>Form</SubType>
@@ -178,6 +215,9 @@
     <EmbeddedResource Include="PresentationLayer\phone_dialer.resx">
       <DependentUpon>phone_dialer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\AdminDashboard_INSERT.resx">
+      <DependentUpon>AdminDashboard_INSERT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\userControls\callCenterDashboard_CALLS.resx">
       <DependentUpon>callCenterDashboard_CALLS.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +232,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\equipment.resx">
+      <DependentUpon>equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\InsertAdmin.resx">
+      <DependentUpon>InsertAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\InsertEquipment.resx">
+      <DependentUpon>InsertEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\InsertTechnician.resx">
+      <DependentUpon>InsertTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\userControls\InsertTechnicians.resx">
+      <DependentUpon>InsertTechnicians.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>

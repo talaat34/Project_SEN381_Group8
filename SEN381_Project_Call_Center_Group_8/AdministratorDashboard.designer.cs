@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministratorDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnViewTable = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUpdateAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -45,6 +45,7 @@
             this.lblAdminDashBoard = new System.Windows.Forms.Label();
             this.dgAdminDashboard = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.button1 = new System.Windows.Forms.Button();
+            this.adminDashboard_INSERT1 = new SEN381_Project_Call_Center_Group_8.PresentationLayer.userControls.AdminDashboard_INSERT();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -103,6 +104,7 @@
             this.btnViewTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewTable.Textcolor = System.Drawing.Color.White;
             this.btnViewTable.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewTable.Click += new System.EventHandler(this.btnViewTable_Click);
             // 
             // btnUpdateAdmin
             // 
@@ -337,19 +339,19 @@
             // 
             // dgAdminDashboard
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgAdminDashboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgAdminDashboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgAdminDashboard.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgAdminDashboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgAdminDashboard.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgAdminDashboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgAdminDashboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgAdminDashboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgAdminDashboard.DoubleBuffered = true;
             this.dgAdminDashboard.EnableHeadersVisualStyles = false;
@@ -361,6 +363,7 @@
             this.dgAdminDashboard.RowHeadersWidth = 62;
             this.dgAdminDashboard.Size = new System.Drawing.Size(600, 396);
             this.dgAdminDashboard.TabIndex = 3;
+            this.dgAdminDashboard.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAdminDashboard_CellContentClick);
             // 
             // button1
             // 
@@ -371,12 +374,20 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // adminDashboard_INSERT1
+            // 
+            this.adminDashboard_INSERT1.Location = new System.Drawing.Point(162, 9);
+            this.adminDashboard_INSERT1.Name = "adminDashboard_INSERT1";
+            this.adminDashboard_INSERT1.Size = new System.Drawing.Size(638, 450);
+            this.adminDashboard_INSERT1.TabIndex = 4;
+            // 
             // AdministratorDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.adminDashboard_INSERT1);
             this.Controls.Add(this.dgAdminDashboard);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -409,5 +420,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnViewTable;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private PresentationLayer.userControls.AdminDashboard_INSERT adminDashboard_INSERT1;
     }
 }
