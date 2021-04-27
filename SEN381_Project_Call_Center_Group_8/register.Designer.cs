@@ -92,9 +92,10 @@
             this.btnBusinessTap.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnBusinessTap.IdleForecolor = System.Drawing.Color.White;
             this.btnBusinessTap.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
-            this.btnBusinessTap.Location = new System.Drawing.Point(137, 43);
+            this.btnBusinessTap.Location = new System.Drawing.Point(183, 53);
+            this.btnBusinessTap.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnBusinessTap.Name = "btnBusinessTap";
-            this.btnBusinessTap.Size = new System.Drawing.Size(121, 34);
+            this.btnBusinessTap.Size = new System.Drawing.Size(161, 42);
             this.btnBusinessTap.TabIndex = 0;
             this.btnBusinessTap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBusinessTap.Click += new System.EventHandler(this.btnBusinessAccount);
@@ -117,9 +118,10 @@
             this.btnAdminstratorTap.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
             this.btnAdminstratorTap.IdleForecolor = System.Drawing.Color.White;
             this.btnAdminstratorTap.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(81)))), ((int)(((byte)(95)))));
-            this.btnAdminstratorTap.Location = new System.Drawing.Point(264, 43);
+            this.btnAdminstratorTap.Location = new System.Drawing.Point(352, 53);
+            this.btnAdminstratorTap.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnAdminstratorTap.Name = "btnAdminstratorTap";
-            this.btnAdminstratorTap.Size = new System.Drawing.Size(121, 34);
+            this.btnAdminstratorTap.Size = new System.Drawing.Size(161, 42);
             this.btnAdminstratorTap.TabIndex = 0;
             this.btnAdminstratorTap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdminstratorTap.Click += new System.EventHandler(this.btnAdminstratorAccount);
@@ -142,9 +144,10 @@
             this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(12, 186);
+            this.bunifuThinButton24.Location = new System.Drawing.Point(16, 229);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(217, 32);
+            this.bunifuThinButton24.Size = new System.Drawing.Size(289, 39);
             this.bunifuThinButton24.TabIndex = 0;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -153,10 +156,9 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(95)))), ((int)(((byte)(137)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(168, 421);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(224, 518);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(59, 20);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(73, 25);
             this.bunifuCustomLabel2.TabIndex = 1;
             this.bunifuCustomLabel2.Text = "LOGIN";
             this.bunifuCustomLabel2.Click += new System.EventHandler(this.BunifuCustomLabel2_Click);
@@ -176,10 +178,10 @@
             this.slideA.Controls.Add(this.bunifuThinButton24);
             this.slideA.Controls.Add(this.txtIndiName);
             this.slideA.Controls.Add(this.bunifuCustomLabel3);
-            this.slideA.Location = new System.Drawing.Point(10, 83);
-            this.slideA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.slideA.Location = new System.Drawing.Point(13, 102);
+            this.slideA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.slideA.Name = "slideA";
-            this.slideA.Size = new System.Drawing.Size(373, 330);
+            this.slideA.Size = new System.Drawing.Size(497, 406);
             this.slideA.TabIndex = 2;
             // 
             // txtIndiSurname
@@ -194,10 +196,10 @@
             this.txtIndiSurname.LineIdleColor = System.Drawing.Color.White;
             this.txtIndiSurname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtIndiSurname.LineThickness = 7;
-            this.txtIndiSurname.Location = new System.Drawing.Point(11, 85);
-            this.txtIndiSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIndiSurname.Location = new System.Drawing.Point(15, 105);
+            this.txtIndiSurname.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIndiSurname.Name = "txtIndiSurname";
-            this.txtIndiSurname.Size = new System.Drawing.Size(351, 37);
+            this.txtIndiSurname.Size = new System.Drawing.Size(468, 46);
             this.txtIndiSurname.TabIndex = 1;
             this.txtIndiSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -213,10 +215,10 @@
             this.txtIndiConPass.LineIdleColor = System.Drawing.Color.White;
             this.txtIndiConPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtIndiConPass.LineThickness = 7;
-            this.txtIndiConPass.Location = new System.Drawing.Point(11, 224);
-            this.txtIndiConPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIndiConPass.Location = new System.Drawing.Point(15, 276);
+            this.txtIndiConPass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIndiConPass.Name = "txtIndiConPass";
-            this.txtIndiConPass.Size = new System.Drawing.Size(351, 37);
+            this.txtIndiConPass.Size = new System.Drawing.Size(468, 46);
             this.txtIndiConPass.TabIndex = 1;
             this.txtIndiConPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -232,10 +234,10 @@
             this.txtIndiPass.LineIdleColor = System.Drawing.Color.White;
             this.txtIndiPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtIndiPass.LineThickness = 7;
-            this.txtIndiPass.Location = new System.Drawing.Point(11, 177);
-            this.txtIndiPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIndiPass.Location = new System.Drawing.Point(15, 218);
+            this.txtIndiPass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIndiPass.Name = "txtIndiPass";
-            this.txtIndiPass.Size = new System.Drawing.Size(351, 37);
+            this.txtIndiPass.Size = new System.Drawing.Size(468, 46);
             this.txtIndiPass.TabIndex = 1;
             this.txtIndiPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -257,9 +259,10 @@
             this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.bunifuThinButton211.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton211.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuThinButton211.Location = new System.Drawing.Point(11, 275);
+            this.bunifuThinButton211.Location = new System.Drawing.Point(15, 338);
+            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton211.Name = "bunifuThinButton211";
-            this.bunifuThinButton211.Size = new System.Drawing.Size(351, 43);
+            this.bunifuThinButton211.Size = new System.Drawing.Size(468, 53);
             this.bunifuThinButton211.TabIndex = 0;
             this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton211.Click += new System.EventHandler(this.BunifuThinButton211_Click);
@@ -276,10 +279,10 @@
             this.txtIndiRole.LineIdleColor = System.Drawing.Color.White;
             this.txtIndiRole.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtIndiRole.LineThickness = 7;
-            this.txtIndiRole.Location = new System.Drawing.Point(11, 131);
-            this.txtIndiRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIndiRole.Location = new System.Drawing.Point(15, 161);
+            this.txtIndiRole.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIndiRole.Name = "txtIndiRole";
-            this.txtIndiRole.Size = new System.Drawing.Size(351, 37);
+            this.txtIndiRole.Size = new System.Drawing.Size(468, 46);
             this.txtIndiRole.TabIndex = 1;
             this.txtIndiRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -295,10 +298,10 @@
             this.txtIndiName.LineIdleColor = System.Drawing.Color.White;
             this.txtIndiName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtIndiName.LineThickness = 7;
-            this.txtIndiName.Location = new System.Drawing.Point(11, 39);
-            this.txtIndiName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIndiName.Location = new System.Drawing.Point(15, 48);
+            this.txtIndiName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIndiName.Name = "txtIndiName";
-            this.txtIndiName.Size = new System.Drawing.Size(351, 37);
+            this.txtIndiName.Size = new System.Drawing.Size(468, 46);
             this.txtIndiName.TabIndex = 1;
             this.txtIndiName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -307,10 +310,9 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(53, 12);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(71, 15);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(270, 22);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(350, 30);
             this.bunifuCustomLabel3.TabIndex = 0;
             this.bunifuCustomLabel3.Text = "Sign Up - Individual Account";
             // 
@@ -324,10 +326,10 @@
             this.slideB.Controls.Add(this.bunifuThinButton21);
             this.slideB.Controls.Add(this.txtBusiName);
             this.slideB.Controls.Add(this.bunifuCustomLabel1);
-            this.slideB.Location = new System.Drawing.Point(407, 83);
-            this.slideB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.slideB.Location = new System.Drawing.Point(543, 102);
+            this.slideB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.slideB.Name = "slideB";
-            this.slideB.Size = new System.Drawing.Size(373, 330);
+            this.slideB.Size = new System.Drawing.Size(497, 406);
             this.slideB.TabIndex = 7;
             // 
             // txtBusiLocation
@@ -342,10 +344,10 @@
             this.txtBusiLocation.LineIdleColor = System.Drawing.Color.White;
             this.txtBusiLocation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtBusiLocation.LineThickness = 7;
-            this.txtBusiLocation.Location = new System.Drawing.Point(11, 85);
-            this.txtBusiLocation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusiLocation.Location = new System.Drawing.Point(15, 105);
+            this.txtBusiLocation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBusiLocation.Name = "txtBusiLocation";
-            this.txtBusiLocation.Size = new System.Drawing.Size(351, 37);
+            this.txtBusiLocation.Size = new System.Drawing.Size(468, 46);
             this.txtBusiLocation.TabIndex = 1;
             this.txtBusiLocation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -361,10 +363,10 @@
             this.txtBusiConf.LineIdleColor = System.Drawing.Color.White;
             this.txtBusiConf.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtBusiConf.LineThickness = 7;
-            this.txtBusiConf.Location = new System.Drawing.Point(11, 224);
-            this.txtBusiConf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusiConf.Location = new System.Drawing.Point(15, 276);
+            this.txtBusiConf.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBusiConf.Name = "txtBusiConf";
-            this.txtBusiConf.Size = new System.Drawing.Size(351, 37);
+            this.txtBusiConf.Size = new System.Drawing.Size(468, 46);
             this.txtBusiConf.TabIndex = 1;
             this.txtBusiConf.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -380,10 +382,10 @@
             this.txtBusiPass.LineIdleColor = System.Drawing.Color.White;
             this.txtBusiPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtBusiPass.LineThickness = 7;
-            this.txtBusiPass.Location = new System.Drawing.Point(11, 177);
-            this.txtBusiPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusiPass.Location = new System.Drawing.Point(15, 218);
+            this.txtBusiPass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBusiPass.Name = "txtBusiPass";
-            this.txtBusiPass.Size = new System.Drawing.Size(351, 37);
+            this.txtBusiPass.Size = new System.Drawing.Size(468, 46);
             this.txtBusiPass.TabIndex = 1;
             this.txtBusiPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -405,9 +407,10 @@
             this.btnBusiSignUp.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnBusiSignUp.IdleForecolor = System.Drawing.Color.White;
             this.btnBusiSignUp.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnBusiSignUp.Location = new System.Drawing.Point(11, 275);
+            this.btnBusiSignUp.Location = new System.Drawing.Point(15, 338);
+            this.btnBusiSignUp.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnBusiSignUp.Name = "btnBusiSignUp";
-            this.btnBusiSignUp.Size = new System.Drawing.Size(351, 43);
+            this.btnBusiSignUp.Size = new System.Drawing.Size(468, 53);
             this.btnBusiSignUp.TabIndex = 0;
             this.btnBusiSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBusiSignUp.Click += new System.EventHandler(this.BtnBusiSignUp_Click);
@@ -424,10 +427,10 @@
             this.txtBusiEmail.LineIdleColor = System.Drawing.Color.White;
             this.txtBusiEmail.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtBusiEmail.LineThickness = 7;
-            this.txtBusiEmail.Location = new System.Drawing.Point(11, 131);
-            this.txtBusiEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusiEmail.Location = new System.Drawing.Point(15, 161);
+            this.txtBusiEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBusiEmail.Name = "txtBusiEmail";
-            this.txtBusiEmail.Size = new System.Drawing.Size(351, 37);
+            this.txtBusiEmail.Size = new System.Drawing.Size(468, 46);
             this.txtBusiEmail.TabIndex = 1;
             this.txtBusiEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -449,9 +452,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(12, 186);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(16, 229);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(217, 32);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(289, 39);
             this.bunifuThinButton21.TabIndex = 0;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -467,10 +471,10 @@
             this.txtBusiName.LineIdleColor = System.Drawing.Color.White;
             this.txtBusiName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtBusiName.LineThickness = 7;
-            this.txtBusiName.Location = new System.Drawing.Point(11, 39);
-            this.txtBusiName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusiName.Location = new System.Drawing.Point(15, 48);
+            this.txtBusiName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtBusiName.Name = "txtBusiName";
-            this.txtBusiName.Size = new System.Drawing.Size(351, 37);
+            this.txtBusiName.Size = new System.Drawing.Size(468, 46);
             this.txtBusiName.TabIndex = 1;
             this.txtBusiName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -479,10 +483,9 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(61, 12);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(81, 15);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(251, 22);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(329, 30);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Sign Up - Business Account";
             // 
@@ -491,10 +494,9 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(95)))), ((int)(((byte)(137)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(561, 387);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(748, 476);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(59, 20);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(73, 25);
             this.bunifuCustomLabel4.TabIndex = 6;
             this.bunifuCustomLabel4.Text = "LOGIN";
             // 
@@ -506,10 +508,10 @@
             this.slideC.Controls.Add(this.btnAdminSignUp);
             this.slideC.Controls.Add(this.txtAdminName);
             this.slideC.Controls.Add(this.bunifuCustomLabel5);
-            this.slideC.Location = new System.Drawing.Point(784, 83);
-            this.slideC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.slideC.Location = new System.Drawing.Point(1045, 102);
+            this.slideC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.slideC.Name = "slideC";
-            this.slideC.Size = new System.Drawing.Size(373, 330);
+            this.slideC.Size = new System.Drawing.Size(497, 406);
             this.slideC.TabIndex = 12;
             // 
             // txtAdminSurname
@@ -524,10 +526,10 @@
             this.txtAdminSurname.LineIdleColor = System.Drawing.Color.White;
             this.txtAdminSurname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtAdminSurname.LineThickness = 7;
-            this.txtAdminSurname.Location = new System.Drawing.Point(11, 100);
-            this.txtAdminSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAdminSurname.Location = new System.Drawing.Point(15, 123);
+            this.txtAdminSurname.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAdminSurname.Name = "txtAdminSurname";
-            this.txtAdminSurname.Size = new System.Drawing.Size(351, 37);
+            this.txtAdminSurname.Size = new System.Drawing.Size(468, 46);
             this.txtAdminSurname.TabIndex = 1;
             this.txtAdminSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -543,10 +545,10 @@
             this.txtAdminConf.LineIdleColor = System.Drawing.Color.White;
             this.txtAdminConf.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtAdminConf.LineThickness = 7;
-            this.txtAdminConf.Location = new System.Drawing.Point(11, 222);
-            this.txtAdminConf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAdminConf.Location = new System.Drawing.Point(15, 273);
+            this.txtAdminConf.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAdminConf.Name = "txtAdminConf";
-            this.txtAdminConf.Size = new System.Drawing.Size(351, 37);
+            this.txtAdminConf.Size = new System.Drawing.Size(468, 46);
             this.txtAdminConf.TabIndex = 1;
             this.txtAdminConf.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -562,10 +564,10 @@
             this.txtAdminPass.LineIdleColor = System.Drawing.Color.White;
             this.txtAdminPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtAdminPass.LineThickness = 7;
-            this.txtAdminPass.Location = new System.Drawing.Point(11, 161);
-            this.txtAdminPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAdminPass.Location = new System.Drawing.Point(15, 198);
+            this.txtAdminPass.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAdminPass.Name = "txtAdminPass";
-            this.txtAdminPass.Size = new System.Drawing.Size(351, 37);
+            this.txtAdminPass.Size = new System.Drawing.Size(468, 46);
             this.txtAdminPass.TabIndex = 1;
             this.txtAdminPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -587,9 +589,10 @@
             this.btnAdminSignUp.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnAdminSignUp.IdleForecolor = System.Drawing.Color.White;
             this.btnAdminSignUp.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnAdminSignUp.Location = new System.Drawing.Point(11, 275);
+            this.btnAdminSignUp.Location = new System.Drawing.Point(15, 338);
+            this.btnAdminSignUp.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnAdminSignUp.Name = "btnAdminSignUp";
-            this.btnAdminSignUp.Size = new System.Drawing.Size(351, 43);
+            this.btnAdminSignUp.Size = new System.Drawing.Size(468, 53);
             this.btnAdminSignUp.TabIndex = 0;
             this.btnAdminSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdminSignUp.Click += new System.EventHandler(this.BtnAdminSignUp_Click);
@@ -606,10 +609,10 @@
             this.txtAdminName.LineIdleColor = System.Drawing.Color.White;
             this.txtAdminName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.txtAdminName.LineThickness = 7;
-            this.txtAdminName.Location = new System.Drawing.Point(11, 39);
-            this.txtAdminName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAdminName.Location = new System.Drawing.Point(15, 48);
+            this.txtAdminName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAdminName.Name = "txtAdminName";
-            this.txtAdminName.Size = new System.Drawing.Size(351, 37);
+            this.txtAdminName.Size = new System.Drawing.Size(468, 46);
             this.txtAdminName.TabIndex = 1;
             this.txtAdminName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -618,10 +621,9 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(66, 12);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(88, 15);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(240, 22);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(311, 30);
             this.bunifuCustomLabel5.TabIndex = 0;
             this.bunifuCustomLabel5.Text = "Sign Up - Admin Account";
             // 
@@ -630,10 +632,9 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(95)))), ((int)(((byte)(137)))));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(942, 387);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(1256, 476);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(59, 20);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(73, 25);
             this.bunifuCustomLabel6.TabIndex = 11;
             this.bunifuCustomLabel6.Text = "LOGIN";
             // 
@@ -655,9 +656,10 @@
             this.btnIndividualTap.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnIndividualTap.IdleForecolor = System.Drawing.Color.White;
             this.btnIndividualTap.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnIndividualTap.Location = new System.Drawing.Point(9, 43);
+            this.btnIndividualTap.Location = new System.Drawing.Point(12, 53);
+            this.btnIndividualTap.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnIndividualTap.Name = "btnIndividualTap";
-            this.btnIndividualTap.Size = new System.Drawing.Size(121, 34);
+            this.btnIndividualTap.Size = new System.Drawing.Size(161, 42);
             this.btnIndividualTap.TabIndex = 0;
             this.btnIndividualTap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIndividualTap.Click += new System.EventHandler(this.btnIndividualAccount);
@@ -670,8 +672,9 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(398, 36);
+            this.panel1.Size = new System.Drawing.Size(531, 44);
             this.panel1.TabIndex = 13;
             // 
             // btnCloseApplication
@@ -680,9 +683,10 @@
             this.btnCloseApplication.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCloseApplication.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseApplication.ForeColor = System.Drawing.Color.White;
-            this.btnCloseApplication.Location = new System.Drawing.Point(365, 8);
+            this.btnCloseApplication.Location = new System.Drawing.Point(487, 10);
+            this.btnCloseApplication.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnCloseApplication.Name = "btnCloseApplication";
-            this.btnCloseApplication.Size = new System.Drawing.Size(26, 25);
+            this.btnCloseApplication.Size = new System.Drawing.Size(33, 32);
             this.btnCloseApplication.TabIndex = 3;
             this.btnCloseApplication.Text = "X";
             this.btnCloseApplication.Click += new System.EventHandler(this.BtnCloseApplication_Click);
@@ -692,18 +696,20 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(50, 9);
+            this.label4.Location = new System.Drawing.Point(67, 11);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 22);
+            this.label4.Size = new System.Drawing.Size(119, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "REGISTER";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -713,19 +719,20 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 2;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(-2, 29);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(-3, 36);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(399, 19);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(532, 23);
             this.bunifuSeparator1.TabIndex = 14;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
             // register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(398, 449);
+            this.ClientSize = new System.Drawing.Size(531, 553);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.slideC);
@@ -738,7 +745,7 @@
             this.Controls.Add(this.btnIndividualTap);
             this.Controls.Add(this.btnBusinessTap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "register";

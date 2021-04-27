@@ -7,8 +7,15 @@ using System.Data;
 
 namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
 {
+    //This is a constructor enum to know which constructor got called/executed
+    //As i have more then 3 constructors and one of them has it's own code to be executed
+    public enum usedConstructor { name }
     public partial class phone_call : Form
     {
+        //This is a getter for the num above
+        usedConstructor usedConstructor{get; }
+
+
         /*This part involve muting, rising, and lowering the sound - START*/
         private const int APPCOMMAND_VOLUME_MUTE = 0x80000;
         private const int APPCOMMAND_VOLUME_UP = 0xA0000;
@@ -28,6 +35,7 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
         Timer tm = new Timer();
         List<SoundPlayer> conversation = new List<SoundPlayer>();
         SoundPlayer issuePlayer;
+        List<calls> cls = new List<calls>();
 
         //Common Variables
         bool _playerOn = false;
@@ -178,57 +186,106 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
                 CallStat = "Canceled";
             }
         }
+
+        public phone_call(string callStatus, List<calls> callList)
+        {
+            //Enum
+            usedConstructor = usedConstructor.name;
+
+            //List of calls
+            cls = callList;
+
+            InitializeComponent();
+
+            this.CallStat = callStatus;
+            
+            //Loading the conversation between customer and employee
+            conversation = common.customer_employee_conversation();
+
+            //This is to delay some time 
+            //Because if a play the calloing ringtone right away the phone_call form
+            //never appears until the ringtone is stopped/finshed
+            common.delaySomeTime(1000, new Action(() => {
+
+                //This variable will be used to detect if the player is on or not
+                //So that when the user clicks on the cancel call button
+                //The player is stopped when the form closes
+                _playerOn = true;
+
+                player.Play();
+            }));
+        }
         /*Some Fields and Properties - END*/
 
         private void Phone_call_Load(object sender, EventArgs e)
         {
-            //Check the callStat <= varibale explained on line 62 to 66
-            if (CallStat == "Answered")
+            if (usedConstructor == usedConstructor.name)
             {
-                tm.Interval = 10000;
+                tm.Interval = 100;
                 tm.Tick += new EventHandler(answerTheCall);
                 tm.Start();
             }
-            else if (CallStat == "Canceled")
+            else
             {
-                tm.Interval = 6000;
-                tm.Tick += new EventHandler(BtnCancelCall_Click);
-                tm.Start();
-            }
+                //Check the callStat <= varibale explained on line 62 to 66
+                if (CallStat == "Answered")
+                {
+                    tm.Interval = 10000;
+                    tm.Tick += new EventHandler(answerTheCall);
+                    tm.Start();
+                }
+                else if (CallStat == "Canceled")
+                {
+                    tm.Interval = 6000;
+                    tm.Tick += new EventHandler(BtnCancelCall_Click);
+                    tm.Start();
+                }
 
+            }
         }
         private void BtnCancelCall_Click(object sender, EventArgs e)
         {
             this.Hide();
 
-            if (_playerOn == true)
+            if (usedConstructor == usedConstructor.name)
             {
-                //We have to do insertion of data when the call is cancelled
-                //Insert the call Into database - START
-                insertCall("Not-Answered");
-                //Insert the call Into database - END
-
                 _playerOn = false;
                 player.Stop();
-                if (prev_form == "client")
-                {
-                    clientDashboard cd = new clientDashboard();
-                    cd.Show();
-                }
-                else if (prev_form == "adminstrator")
-                {
-                    callCenterDashoard ccd = new callCenterDashoard();
-                    ccd.Show();
-                }
-                else
-                {
-                    MessageBox.Show("The player has finished");
-                }
-            }
-            else if (_conversationOn == true)
-            {
                 lblCalling.Text = "Calling...";
                 issuePlayer.Stop();
+                sendDB_Items.insert_Call(cls, "Answered");
+            }
+            else
+            {
+                if (_playerOn == true)
+                {
+                    //We have to do insertion of data when the call is cancelled
+                    //Insert the call Into database - START
+                    insertCall("Not-Answered");
+                    //Insert the call Into database - END
+
+                    _playerOn = false;
+                    player.Stop();
+                    if (prev_form == "client")
+                    {
+                        clientDashboard cd = new clientDashboard();
+                        cd.Show();
+                    }
+                    else if (prev_form == "adminstrator")
+                    {
+                        callCenterDashoard ccd = new callCenterDashoard();
+                        ccd.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("The player has finished");
+                    }
+                }
+                else if (_conversationOn == true)
+                {
+                    lblCalling.Text = "Calling...";
+                    issuePlayer.Stop();
+                }
             }
         }
 
@@ -254,7 +311,14 @@ namespace SEN381_Project_Call_Center_Group_8.PresentationLayer
                 _conversationOn = true;
 
                 //Insert the call Into database - START
-                insertCall("Answered");
+                if (usedConstructor == usedConstructor.name)
+                {
+                    sendDB_Items.insert_Call(cls, "Answered");
+                }
+                else
+                {
+                    insertCall("Answered");
+                }
                 //Insert the call Into database - END
 
                 //Insert the call Into database - START
