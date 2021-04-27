@@ -75,6 +75,12 @@
     <Compile Include="clientDashboard.Designer.cs">
       <DependentUpon>clientDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresentationLayer\incoming_call.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\incoming_call.Designer.cs">
+      <DependentUpon>incoming_call.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentationLayer\phone_call.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="clientDashboard.resx">
       <DependentUpon>clientDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayer\incoming_call.resx">
+      <DependentUpon>incoming_call.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PresentationLayer\phone_call.resx">
       <DependentUpon>phone_call.cs</DependentUpon>

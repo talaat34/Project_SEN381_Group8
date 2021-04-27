@@ -69,59 +69,53 @@ namespace SEN381_Project_Call_Center_Group_8
             {
                 seconds = 0;
                 callTimer.Stop();
-                
-                MessageBoxManager.OK = "Accept";
-                MessageBoxManager.Cancel = "Cancel";
 
                 // This is for making the call
                 List<calls> completeCall = cls.generateCall(loginPersonDetails.id);
-                foreach (calls compCall in completeCall)
-                {
-                    player.PlayLooping();
-                    compCall.CallStatus = "Answered";
-                    res = MessageBox.Show(compCall.ToString(), "Tests", MessageBoxButtons.OKCancel);
-                }
+                PresentationLayer.incoming_call ic = new PresentationLayer.incoming_call(completeCall);
+                ic.Show();
                 
                 
-                if (res == DialogResult.OK)//Accept Call
-                {
-                    //Insert call details in database
-                    callInsert_result = access.insertCall(completeCall, "Answered");
+                //This entire code will be moved to the incoming call form
+                //if (res == DialogResult.OK)//Accept Call
+                //{
+                //    //Insert call details in database
+                //    callInsert_result = access.insertCall(completeCall, "Answered");
 
-                    //Stop the call ringtone
-                    player.Stop();
+                //    //Stop the call ringtone
+                //    player.Stop();
 
-                    // This is for listening to the customer's issue - START
-                    int callIndex = Common.generateRandomNumber(0, 1);
-                    issuePlayer = callSamples[callIndex];
-                    issuePlayer.PlaySync();
-                    Common.alertt(callInsert_result);
-                    // This is for listeniong to the customer's issue - END
+                //    // This is for listening to the customer's issue - START
+                //    int callIndex = Common.generateRandomNumber(0, 1);
+                //    issuePlayer = callSamples[callIndex];
+                //    issuePlayer.PlaySync();
+                //    Common.alertt(callInsert_result);
+                //    // This is for listeniong to the customer's issue - END
 
-                    //Restart to make a new call
-                    callTimer.Start();
-                    callInterval = 1;
-                    callInterval = Common.generateRandomNumber(10, 100);
-                    seconds = 0;
-                }
-                else if (res == DialogResult.Cancel)// Cancel Call
-                {
-                    //Insert call details in database
-                    callInsert_result = access.insertCall(completeCall, "Canceled");
+                //    //Restart to make a new call
+                //    callTimer.Start();
+                //    callInterval = 1;
+                //    callInterval = Common.generateRandomNumber(10, 100);
+                //    seconds = 0;
+                //}
+                //else if (res == DialogResult.Cancel)// Cancel Call
+                //{
+                //    //Insert call details in database
+                //    callInsert_result = access.insertCall(completeCall, "Canceled");
 
-                    //Stop the call ringtone
-                    player.Stop();
+                //    //Stop the call ringtone
+                //    player.Stop();
 
-                    //Code to be done when a call is canceled - START
-                    Common.alertt("Canceled Call");
-                    //Code to be done when a call is canceled - END
+                //    //Code to be done when a call is canceled - START
+                //    Common.alertt("Canceled Call");
+                //    //Code to be done when a call is canceled - END
 
-                    //Restart to make a new call
-                    callTimer.Start();
-                    callInterval = 1;
-                    callInterval = Common.generateRandomNumber(10, 100);
-                    seconds = 0;
-                }
+                //    //Restart to make a new call
+                //    callTimer.Start();
+                //    callInterval = 1;
+                //    callInterval = Common.generateRandomNumber(10, 100);
+                //    seconds = 0;
+                //}
 
             }
 

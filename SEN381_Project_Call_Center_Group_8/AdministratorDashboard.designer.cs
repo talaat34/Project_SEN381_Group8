@@ -29,380 +29,282 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministratorDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnViewTable = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnUpdateAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRemoveAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnProfileAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.BtnInsertAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLogoutAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblAdminDashBoard = new System.Windows.Forms.Label();
-            this.dgAdminDashboard = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
+            this.minimizeBtn = new System.Windows.Forms.PictureBox();
+            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pnlNav = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgAdminDashboard)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel1.Controls.Add(this.btnViewTable);
-            this.panel1.Controls.Add(this.btnUpdateAdmin);
-            this.panel1.Controls.Add(this.btnRemoveAdmin);
-            this.panel1.Controls.Add(this.btnProfileAdmin);
-            this.panel1.Controls.Add(this.BtnInsertAdmin);
-            this.panel1.Controls.Add(this.btnLogoutAdmin);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 692);
-            this.panel1.TabIndex = 1;
-            // 
-            // btnViewTable
-            // 
-            this.btnViewTable.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnViewTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnViewTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnViewTable.BorderRadius = 0;
-            this.btnViewTable.ButtonText = "View Table";
-            this.btnViewTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnViewTable.DisabledColor = System.Drawing.Color.Gray;
-            this.btnViewTable.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnViewTable.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnViewTable.Iconimage")));
-            this.btnViewTable.Iconimage_right = null;
-            this.btnViewTable.Iconimage_right_Selected = null;
-            this.btnViewTable.Iconimage_Selected = null;
-            this.btnViewTable.IconMarginLeft = 0;
-            this.btnViewTable.IconMarginRight = 0;
-            this.btnViewTable.IconRightVisible = true;
-            this.btnViewTable.IconRightZoom = 0D;
-            this.btnViewTable.IconVisible = true;
-            this.btnViewTable.IconZoom = 90D;
-            this.btnViewTable.IsTab = false;
-            this.btnViewTable.Location = new System.Drawing.Point(0, 285);
-            this.btnViewTable.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnViewTable.Name = "btnViewTable";
-            this.btnViewTable.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnViewTable.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnViewTable.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnViewTable.selected = false;
-            this.btnViewTable.Size = new System.Drawing.Size(300, 74);
-            this.btnViewTable.TabIndex = 4;
-            this.btnViewTable.Text = "View Table";
-            this.btnViewTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewTable.Textcolor = System.Drawing.Color.White;
-            this.btnViewTable.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnUpdateAdmin
-            // 
-            this.btnUpdateAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnUpdateAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnUpdateAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUpdateAdmin.BorderRadius = 0;
-            this.btnUpdateAdmin.ButtonText = "Update";
-            this.btnUpdateAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdateAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnUpdateAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnUpdateAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUpdateAdmin.Iconimage")));
-            this.btnUpdateAdmin.Iconimage_right = null;
-            this.btnUpdateAdmin.Iconimage_right_Selected = null;
-            this.btnUpdateAdmin.Iconimage_Selected = null;
-            this.btnUpdateAdmin.IconMarginLeft = 0;
-            this.btnUpdateAdmin.IconMarginRight = 0;
-            this.btnUpdateAdmin.IconRightVisible = true;
-            this.btnUpdateAdmin.IconRightZoom = 0D;
-            this.btnUpdateAdmin.IconVisible = true;
-            this.btnUpdateAdmin.IconZoom = 90D;
-            this.btnUpdateAdmin.IsTab = false;
-            this.btnUpdateAdmin.Location = new System.Drawing.Point(0, 482);
-            this.btnUpdateAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnUpdateAdmin.Name = "btnUpdateAdmin";
-            this.btnUpdateAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnUpdateAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnUpdateAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnUpdateAdmin.selected = false;
-            this.btnUpdateAdmin.Size = new System.Drawing.Size(300, 74);
-            this.btnUpdateAdmin.TabIndex = 3;
-            this.btnUpdateAdmin.Text = "Update";
-            this.btnUpdateAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateAdmin.Textcolor = System.Drawing.Color.White;
-            this.btnUpdateAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnRemoveAdmin
-            // 
-            this.btnRemoveAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnRemoveAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnRemoveAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemoveAdmin.BorderRadius = 0;
-            this.btnRemoveAdmin.ButtonText = "Remove";
-            this.btnRemoveAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemoveAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemoveAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemoveAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemoveAdmin.Iconimage")));
-            this.btnRemoveAdmin.Iconimage_right = null;
-            this.btnRemoveAdmin.Iconimage_right_Selected = null;
-            this.btnRemoveAdmin.Iconimage_Selected = null;
-            this.btnRemoveAdmin.IconMarginLeft = 0;
-            this.btnRemoveAdmin.IconMarginRight = 0;
-            this.btnRemoveAdmin.IconRightVisible = true;
-            this.btnRemoveAdmin.IconRightZoom = 0D;
-            this.btnRemoveAdmin.IconVisible = true;
-            this.btnRemoveAdmin.IconZoom = 90D;
-            this.btnRemoveAdmin.IsTab = false;
-            this.btnRemoveAdmin.Location = new System.Drawing.Point(0, 412);
-            this.btnRemoveAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnRemoveAdmin.Name = "btnRemoveAdmin";
-            this.btnRemoveAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnRemoveAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnRemoveAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemoveAdmin.selected = false;
-            this.btnRemoveAdmin.Size = new System.Drawing.Size(300, 74);
-            this.btnRemoveAdmin.TabIndex = 2;
-            this.btnRemoveAdmin.Text = "Remove";
-            this.btnRemoveAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemoveAdmin.Textcolor = System.Drawing.Color.White;
-            this.btnRemoveAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnProfileAdmin
-            // 
-            this.btnProfileAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnProfileAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnProfileAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProfileAdmin.BorderRadius = 0;
-            this.btnProfileAdmin.ButtonText = "Profile";
-            this.btnProfileAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfileAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnProfileAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnProfileAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProfileAdmin.Iconimage")));
-            this.btnProfileAdmin.Iconimage_right = null;
-            this.btnProfileAdmin.Iconimage_right_Selected = null;
-            this.btnProfileAdmin.Iconimage_Selected = null;
-            this.btnProfileAdmin.IconMarginLeft = 0;
-            this.btnProfileAdmin.IconMarginRight = 0;
-            this.btnProfileAdmin.IconRightVisible = true;
-            this.btnProfileAdmin.IconRightZoom = 0D;
-            this.btnProfileAdmin.IconVisible = true;
-            this.btnProfileAdmin.IconZoom = 50D;
-            this.btnProfileAdmin.IsTab = false;
-            this.btnProfileAdmin.Location = new System.Drawing.Point(0, 551);
-            this.btnProfileAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnProfileAdmin.Name = "btnProfileAdmin";
-            this.btnProfileAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnProfileAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnProfileAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnProfileAdmin.selected = false;
-            this.btnProfileAdmin.Size = new System.Drawing.Size(300, 74);
-            this.btnProfileAdmin.TabIndex = 0;
-            this.btnProfileAdmin.Text = "Profile";
-            this.btnProfileAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfileAdmin.Textcolor = System.Drawing.Color.White;
-            this.btnProfileAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // BtnInsertAdmin
-            // 
-            this.BtnInsertAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.BtnInsertAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.BtnInsertAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnInsertAdmin.BorderRadius = 0;
-            this.BtnInsertAdmin.ButtonText = "Insert";
-            this.BtnInsertAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnInsertAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.BtnInsertAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtnInsertAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtnInsertAdmin.Iconimage")));
-            this.BtnInsertAdmin.Iconimage_right = null;
-            this.BtnInsertAdmin.Iconimage_right_Selected = null;
-            this.BtnInsertAdmin.Iconimage_Selected = null;
-            this.BtnInsertAdmin.IconMarginLeft = 0;
-            this.BtnInsertAdmin.IconMarginRight = 0;
-            this.BtnInsertAdmin.IconRightVisible = true;
-            this.BtnInsertAdmin.IconRightZoom = 0D;
-            this.BtnInsertAdmin.IconVisible = true;
-            this.BtnInsertAdmin.IconZoom = 90D;
-            this.BtnInsertAdmin.IsTab = false;
-            this.BtnInsertAdmin.Location = new System.Drawing.Point(0, 343);
-            this.BtnInsertAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.BtnInsertAdmin.Name = "BtnInsertAdmin";
-            this.BtnInsertAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.BtnInsertAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.BtnInsertAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtnInsertAdmin.selected = false;
-            this.BtnInsertAdmin.Size = new System.Drawing.Size(300, 74);
-            this.BtnInsertAdmin.TabIndex = 1;
-            this.BtnInsertAdmin.Text = "Insert";
-            this.BtnInsertAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnInsertAdmin.Textcolor = System.Drawing.Color.White;
-            this.BtnInsertAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnLogoutAdmin
-            // 
-            this.btnLogoutAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogoutAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogoutAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogoutAdmin.BorderRadius = 0;
-            this.btnLogoutAdmin.ButtonText = "Logout";
-            this.btnLogoutAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogoutAdmin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogoutAdmin.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogoutAdmin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogoutAdmin.Iconimage")));
-            this.btnLogoutAdmin.Iconimage_right = null;
-            this.btnLogoutAdmin.Iconimage_right_Selected = null;
-            this.btnLogoutAdmin.Iconimage_Selected = null;
-            this.btnLogoutAdmin.IconMarginLeft = 0;
-            this.btnLogoutAdmin.IconMarginRight = 0;
-            this.btnLogoutAdmin.IconRightVisible = true;
-            this.btnLogoutAdmin.IconRightZoom = 0D;
-            this.btnLogoutAdmin.IconVisible = true;
-            this.btnLogoutAdmin.IconZoom = 50D;
-            this.btnLogoutAdmin.IsTab = false;
-            this.btnLogoutAdmin.Location = new System.Drawing.Point(0, 618);
-            this.btnLogoutAdmin.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnLogoutAdmin.Name = "btnLogoutAdmin";
-            this.btnLogoutAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogoutAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnLogoutAdmin.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogoutAdmin.selected = false;
-            this.btnLogoutAdmin.Size = new System.Drawing.Size(300, 74);
-            this.btnLogoutAdmin.TabIndex = 0;
-            this.btnLogoutAdmin.Text = "Logout";
-            this.btnLogoutAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogoutAdmin.Textcolor = System.Drawing.SystemColors.Window;
-            this.btnLogoutAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.bunifuImageButton1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 247);
-            this.panel4.TabIndex = 0;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(300, 250);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 0;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 5;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.closeBtn);
+            this.panel2.Controls.Add(this.minimizeBtn);
             this.panel2.Controls.Add(this.lblAdminDashBoard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(266, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(900, 83);
-            this.panel2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(828, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 38);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "X";
+            this.panel2.Size = new System.Drawing.Size(801, 61);
+            this.panel2.TabIndex = 9;
             // 
             // lblAdminDashBoard
             // 
             this.lblAdminDashBoard.AutoSize = true;
             this.lblAdminDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminDashBoard.Location = new System.Drawing.Point(308, 14);
+            this.lblAdminDashBoard.Location = new System.Drawing.Point(255, 11);
             this.lblAdminDashBoard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminDashBoard.Name = "lblAdminDashBoard";
-            this.lblAdminDashBoard.Size = new System.Drawing.Size(339, 46);
+            this.lblAdminDashBoard.Size = new System.Drawing.Size(290, 39);
             this.lblAdminDashBoard.TabIndex = 0;
             this.lblAdminDashBoard.Text = "Admin Dashboard";
             // 
-            // dgAdminDashboard
+            // bunifuGradientPanel1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgAdminDashboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgAdminDashboard.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgAdminDashboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgAdminDashboard.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgAdminDashboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgAdminDashboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgAdminDashboard.DoubleBuffered = true;
-            this.dgAdminDashboard.EnableHeadersVisualStyles = false;
-            this.dgAdminDashboard.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgAdminDashboard.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgAdminDashboard.Location = new System.Drawing.Point(300, 83);
-            this.dgAdminDashboard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgAdminDashboard.Name = "dgAdminDashboard";
-            this.dgAdminDashboard.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgAdminDashboard.RowHeadersWidth = 62;
-            this.dgAdminDashboard.Size = new System.Drawing.Size(900, 609);
-            this.dgAdminDashboard.TabIndex = 3;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.pnlNav);
+            this.bunifuGradientPanel1.Controls.Add(this.btnProfile);
+            this.bunifuGradientPanel1.Controls.Add(this.btnDelete);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdate);
+            this.bunifuGradientPanel1.Controls.Add(this.btnInsert);
+            this.bunifuGradientPanel1.Controls.Add(this.btnView);
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(198)))), ((int)(((byte)(240)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(210)))), ((int)(((byte)(147)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DeepSkyBlue;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(198)))), ((int)(((byte)(240)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(266, 554);
+            this.bunifuGradientPanel1.TabIndex = 6;
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.Transparent;
+            this.btnView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
+            this.btnView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnView.Location = new System.Drawing.Point(0, 211);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(266, 55);
+            this.btnView.TabIndex = 0;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.BtnView_Click);
+            this.btnView.Leave += new System.EventHandler(this.BtnView_Leave);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.BackColor = System.Drawing.Color.Transparent;
+            this.btnInsert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsert.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnInsert.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.Image")));
+            this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInsert.Location = new System.Drawing.Point(0, 266);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(266, 55);
+            this.btnInsert.TabIndex = 1;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.BtnInsert_Click);
+            this.btnInsert.Leave += new System.EventHandler(this.BtnInsert_Leave);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(0, 321);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(266, 55);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            this.btnUpdate.Leave += new System.EventHandler(this.BtnUpdate_Leave);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(0, 376);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(266, 55);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            this.btnDelete.Leave += new System.EventHandler(this.BtnDelete_Leave);
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfile.Location = new System.Drawing.Point(0, 431);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(266, 55);
+            this.btnProfile.TabIndex = 4;
+            this.btnProfile.Text = "Profile";
+            this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.BtnProfile_Click);
+            this.btnProfile.Leave += new System.EventHandler(this.BtnProfile_Leave);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(48)))), ((int)(((byte)(81)))));
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(0, 499);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(266, 55);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            this.btnLogout.Leave += new System.EventHandler(this.BtnLogout_Leave);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
+            this.closeBtn.Location = new System.Drawing.Point(754, 15);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(35, 30);
+            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closeBtn.TabIndex = 8;
+            this.closeBtn.TabStop = false;
+            this.closeBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.minimizeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.Image")));
+            this.minimizeBtn.Location = new System.Drawing.Point(714, 15);
+            this.minimizeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(35, 30);
+            this.minimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minimizeBtn.TabIndex = 9;
+            this.minimizeBtn.TabStop = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
+            // 
+            // bunifuGradientPanel2
+            // 
+            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
+            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(210)))), ((int)(((byte)(147)))));
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(119)))), ((int)(((byte)(213)))));
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(199)))), ((int)(((byte)(215)))));
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(200)))), ((int)(((byte)(214)))));
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(266, 61);
+            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+            this.bunifuGradientPanel2.Quality = 10;
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(801, 493);
+            this.bunifuGradientPanel2.TabIndex = 7;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.Red;
+            this.pnlNav.Location = new System.Drawing.Point(0, 211);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(10, 55);
+            this.pnlNav.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(266, 211);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // AdministratorDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.ControlBox = false;
-            this.Controls.Add(this.dgAdminDashboard);
+            this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdministratorDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdministratorDashboard";
-            this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgAdminDashboard)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnUpdateAdmin;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRemoveAdmin;
-        private Bunifu.Framework.UI.BunifuFlatButton btnProfileAdmin;
-        private Bunifu.Framework.UI.BunifuFlatButton BtnInsertAdmin;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogoutAdmin;
-        private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblAdminDashBoard;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgAdminDashboard;
-        private Bunifu.Framework.UI.BunifuFlatButton btnViewTable;
-        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.PictureBox closeBtn;
+        private System.Windows.Forms.PictureBox minimizeBtn;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
+        private System.Windows.Forms.Panel pnlNav;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

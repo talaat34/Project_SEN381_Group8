@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SEN381_Project_Call_Center_Group_8
 {
-    class calls
+    public class calls
     {
         //THIS IS FOR COMMON OBJECTS THAT WILL BE USED
         dbAcccess access = new dbAcccess();

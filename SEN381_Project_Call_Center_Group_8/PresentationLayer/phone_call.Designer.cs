@@ -33,11 +33,11 @@
             this.btnMute = new SEN381_Project_Call_Center_Group_8.RoundButton();
             this.btnVolHigh = new SEN381_Project_Call_Center_Group_8.RoundButton();
             this.btnVolLow = new SEN381_Project_Call_Center_Group_8.RoundButton();
-            this.btnCancelCall = new SEN381_Project_Call_Center_Group_8.RoundButton();
             this.lblCalling = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblUserID = new System.Windows.Forms.Label();
+            this.btnCancelCal = new SEN381_Project_Call_Center_Group_8.RoundButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,10 +46,10 @@
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(119)))), ((int)(((byte)(213)))));
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnCancelCal);
             this.bunifuGradientPanel1.Controls.Add(this.btnMute);
             this.bunifuGradientPanel1.Controls.Add(this.btnVolHigh);
             this.bunifuGradientPanel1.Controls.Add(this.btnVolLow);
-            this.bunifuGradientPanel1.Controls.Add(this.btnCancelCall);
             this.bunifuGradientPanel1.Controls.Add(this.lblCalling);
             this.bunifuGradientPanel1.Controls.Add(this.lblUsername);
             this.bunifuGradientPanel1.Controls.Add(this.lblPhoneNumber);
@@ -98,18 +98,6 @@
             this.btnVolLow.TabIndex = 3;
             this.btnVolLow.UseVisualStyleBackColor = false;
             this.btnVolLow.Click += new System.EventHandler(this.BtnVolLow_Click);
-            // 
-            // btnCancelCall
-            // 
-            this.btnCancelCall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(47)))));
-            this.btnCancelCall.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancelCall.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelCall.Image")));
-            this.btnCancelCall.Location = new System.Drawing.Point(124, 424);
-            this.btnCancelCall.Name = "btnCancelCall";
-            this.btnCancelCall.Size = new System.Drawing.Size(136, 99);
-            this.btnCancelCall.TabIndex = 2;
-            this.btnCancelCall.UseVisualStyleBackColor = false;
-            this.btnCancelCall.Click += new System.EventHandler(this.BtnCancelCall_Click);
             // 
             // lblCalling
             // 
@@ -167,6 +155,17 @@
             this.lblUserID.Text = "12134569871236";
             this.lblUserID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnCancelCal
+            // 
+            this.btnCancelCal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(47)))));
+            this.btnCancelCal.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelCal.Image")));
+            this.btnCancelCal.Location = new System.Drawing.Point(124, 441);
+            this.btnCancelCal.Name = "btnCancelCal";
+            this.btnCancelCal.Size = new System.Drawing.Size(136, 99);
+            this.btnCancelCal.TabIndex = 3;
+            this.btnCancelCal.UseVisualStyleBackColor = false;
+            this.btnCancelCal.Click += new System.EventHandler(this.BtnCancelCall_Click);
+            // 
             // phone_call
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,5 +193,6 @@
         private RoundButton btnMute;
         private RoundButton btnVolHigh;
         private RoundButton btnVolLow;
+        private RoundButton btnCancelCal;
     }
 }
